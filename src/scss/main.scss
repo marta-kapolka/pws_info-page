@@ -1,11 +1,11 @@
 @import "~normalize.css";
 
 @import "_variables";
-@import "modules/hello.scss";
+@import "modules/nav.scss";
 
 body {
-  background: $wtf;
-  color: #fff;
+  background: #fff;
+  color: #000;
   display: flex;
   align-items: center;
   justify-content: center;
