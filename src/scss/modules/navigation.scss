@@ -1,0 +1,32 @@
+.navigation {
+    background-color: $white;
+    display: none;
+    padding: 2rem 0;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    &__link {
+        display: block;
+        font-family: $accent;
+        font-size: 1.8rem;
+        padding: 1.5rem 1rem;
+        text-transform: uppercase;
+        &:hover {
+            color: $primary;
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    
+}
+
+@media (min-width: 1024px) {
+    .navigation {
+        display: inline-block;
+        padding: 1rem;
+        &__link {
+            display: inline-block;
+        }
+    }
+}

@@ -1,0 +1,38 @@
+.header {
+    padding-bottom: 1.5rem;
+    position: relative;
+    &__flex-container {
+        align-items: flex-end;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__logo {
+        height: 14rem;
+        margin-right: 1rem;
+    }
+    &__page-name {
+        font-family: $accent;
+        font-size: 1.4rem;
+        line-height: 1.5;
+        margin: 0;
+        text-align: right;
+        text-transform: uppercase;
+    }
+}
+
+@media (min-width: 768px) {
+    .header {
+        &__page-name {
+            font-size: 2rem;
+        }
+    }
+}
+
+@media (min-width: 1024px) {
+    .header {
+        &__page-name {
+            font-size: 2.4rem;
+            letter-spacing: .2rem;
+        }
+    }
+}

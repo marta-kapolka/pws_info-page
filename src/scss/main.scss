@@ -3,14 +3,34 @@
 @import url('https://fonts.googleapis.com/css2?family=Prosto+One&family=Roboto:wght@300;400;700&display=swap');
 
 @import "_variables";
-@import "modules/nav.scss";
+@import "modules/navigation.scss";
+@import "modules/header.scss";
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
 
 html {
   font-family: $text;
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
 body {
-  background: #fff;
-  color: #000;
+  background: $white;
+  box-sizing: border-box;
+  color: $black;
+}
+
+a {
+  color: $black;
+  text-decoration: none;
+}
+
+.main {
+  padding: 1.5rem;
 }
