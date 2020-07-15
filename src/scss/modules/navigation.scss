@@ -1,8 +1,8 @@
 .navigation {
     background-color: $white;
     display: none;
-    padding: 2rem 0;
-    position: absolute;
+    padding: 5rem 0;
+    position: fixed;
     text-align: center;
     width: 100%;
     z-index: 80;
@@ -18,7 +18,7 @@
     }
     &--open {
         display: block;
-        z-index: 100;
+        z-index: 99;
     }
 }
 
@@ -27,6 +27,7 @@
     position: fixed;
     right: 1rem;
     top: 1rem;
+    z-index: 100;
 }
 
 @media (min-width: 768px) {
