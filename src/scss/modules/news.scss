@@ -1,12 +1,39 @@
 .news {
-    padding: 2rem 0;
+  background-image: url("../assets/img/background-news.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: $outter-mobile;
+  position: relative;
+  &__shadow {
+    background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.47) 29.69%,
+      rgba(0, 0, 0, 0) 100%
+    );
+    height: 14rem;
+    left: 0;
+    max-height: 100%;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 0;
+  }
   &__title {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     color: $white;
     font-family: $accent;
     font-size: 2.4rem;
     margin-bottom: 2rem;
+    position: relative;
     text-align: center;
     text-transform: uppercase;
+    z-index: 90;
+  }
+}
+
+@media (min-width: 1024px) {
+  .news {
+    padding: $outter-desktop;
   }
 }
