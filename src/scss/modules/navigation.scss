@@ -5,16 +5,28 @@
     position: absolute;
     text-align: center;
     width: 100%;
+    z-index: 80;
     &__link {
         display: block;
         font-family: $accent;
         font-size: 1.8rem;
-        padding: 1.5rem 1rem;
+        padding: 1.5rem 1.5rem;
         text-transform: uppercase;
         &:hover {
             color: $primary;
         }
     }
+    &--open {
+        display: block;
+        z-index: 100;
+    }
+}
+
+.hamburger {
+    font-size: 2rem;
+    position: fixed;
+    right: 1rem;
+    top: 1rem;
 }
 
 @media (min-width: 768px) {
@@ -23,10 +35,18 @@
 
 @media (min-width: 1024px) {
     .navigation {
-        display: inline-block;
-        padding: 1rem;
+        display: flex;
+        justify-content: flex-end;
+        padding: .6rem;
+        position: fixed;
+        right: 0;
+        top: 0;
         &__link {
             display: inline-block;
+            font-size: 1.6rem;
         }
+    }
+    .hamburger {
+        display: none;
     }
 }

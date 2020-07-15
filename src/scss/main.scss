@@ -34,3 +34,9 @@ a {
 .main {
   padding: 1.5rem;
 }
+
+@media (min-width: 1024px) {
+  .main {
+    padding: 2rem;
+  }
+}

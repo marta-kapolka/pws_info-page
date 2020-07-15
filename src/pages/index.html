@@ -145,21 +145,25 @@
     />
   </head>
   <body>
-    <nav class="navigation">
-      <a href="#news" class="navigation__link">Najbliższe&nbsp;rundy</a>
-      <a href="#calendar" class="navigation__link">Kalendarz&nbsp;2020</a>
-      <a href="#results" class="navigation__link">Klasyfikacje</a>
-      <a href="#about" class="navigation__link">O&nbsp;pucharze</a>
-      <a href="#contact" class="navigation__link">Kontakt</a>
-    </nav>
+    <div>
+      <button class="hamburger hamburger--js">menu</button>
+      <nav class="navigation navigation--js">
+        <a href="#news" class="navigation__link">Najbliższe&nbsp;rundy</a>
+        <a href="#calendar" class="navigation__link">Kalendarz&nbsp;2020</a>
+        <a href="#results" class="navigation__link">Klasyfikacje</a>
+        <a href="#about" class="navigation__link">O&nbsp;pucharze</a>
+        <a href="#contact" class="navigation__link">Kontakt</a>
+      </nav>
+    </div>
     <main class="main">
       <header class="header">
-        
         <div class="header__flex-container">
-        <img class="header__logo" src="../assets/img/logo.png">
-        <h1 class="header__page-name">Puchar Województwa Śląskiego w&nbsp;Marszach na&nbsp;Orientację</h1>
-      </div>
-        
+          <img class="header__logo" src="../assets/img/logo.png" />
+          <h1 class="header__page-name">
+            Puchar Województwa<span class="header__nbsp"></span>Śląskiego
+            w&nbsp;Marszach<span class="header__nbsp"></span>na&nbsp;Orientację
+          </h1>
+        </div>
       </header>
       <section class="news" id="news">
         <h2>Najbliższe rundy</h2>
@@ -171,7 +175,7 @@
         <table class="calendar__table"></table>
       </section>
       <section class="results" id="results">
-      <h2>Aktualne klasyfikacje</h2>
+        <h2>Aktualne klasyfikacje</h2>
       </section>
       <section class="about" id="about">
         <h2>O pucharze</h2>
