@@ -47,19 +47,35 @@
   }
   &__number {
     background: rgba(176, 250, 255, 0.5);
-    padding: 0.7rem 0.51rem;
+    padding: 0.7rem 0.5rem;
+    position: relative;
     text-align: right;
     text-transform: uppercase;
+    z-index: 90;
   }
   &__parameter {
     background-color: $primary;
     color: $white;
+    min-width: 9rem;
     padding: 0.7rem 1.5rem;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     text-transform: uppercase;
     width: 20%;
     &--first {
       padding-top: 2rem;
+      &::before {
+          background-color: $primary;
+          content: '';
+          display: block;
+          height: 3rem;
+          left: 0;
+          min-width: 9rem;
+          padding: .7rem 0;
+          position: absolute;
+          top: 0;
+          width: 20%;
+          z-index: 80;
+      }
     }
     &--last {
       padding-bottom: 2rem;
