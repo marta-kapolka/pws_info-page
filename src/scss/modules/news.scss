@@ -8,7 +8,7 @@
   &__shadow {
     background: linear-gradient(
       180deg,
-      rgba(0, 0, 0, 0.75) 20%,
+      rgba(0, 0, 0, 0.6) 20%,
       rgba(0, 0, 0, 0) 100%
     );
     height: 20rem;
@@ -24,11 +24,11 @@
     color: $white;
     font-family: $accent;
     font-size: 2.4rem;
-    margin: 1rem 0 2rem;
+    margin: 1rem 0;
     position: relative;
     text-align: center;
     text-transform: uppercase;
-    z-index: 90;
+    z-index: 60;
   }
   &__events {
     display: flex;
@@ -43,7 +43,7 @@
   max-width: 35rem;
   position: relative;
   width: 100%;
-  z-index: 80;
+  z-index: 50;
   &__table {
     border-spacing: 0;
     font-family: $accent;
@@ -58,7 +58,7 @@
     position: relative;
     text-align: right;
     text-transform: uppercase;
-    z-index: 90;
+    z-index: 60;
   }
   &__parameter {
     background-color: $primary;
@@ -81,7 +81,7 @@
         position: absolute;
         top: 0;
         width: 20%;
-        z-index: 80;
+        z-index: 50;
       }
     }
     &--last {
@@ -104,12 +104,18 @@
 
 @media (min-width: 420px) {
   .event {
-    margin: 1.5rem 2rem 3rem;
+    margin: 1.5rem 2rem;
   }
 }
 
 @media (min-width: 1024px) {
   .news {
-    padding: $outter-desktop;
+    padding: 7rem $outter-desktop;
+    &__events {
+      margin-top: 3rem;
+    }
+    &__shadow {
+      height: 30rem;
+    }
   }
 }

@@ -5,7 +5,7 @@
     position: fixed;
     text-align: center;
     width: 100%;
-    z-index: 80;
+    z-index: 95;
     &__link {
         display: block;
         font-family: $accent;
@@ -18,7 +18,6 @@
     }
     &--open {
         display: block;
-        z-index: 99;
     }
 }
 
@@ -42,6 +41,7 @@
         position: fixed;
         right: 0;
         top: 0;
+        z-index: 80;
         &__link {
             display: inline-block;
             font-size: 1.6rem;

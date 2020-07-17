@@ -4,11 +4,15 @@
     color: $black;
     font-family: $accent;
     font-size: 2.4rem;
-    margin: 1rem 0 2rem;
+    margin: 1rem 0;
     position: relative;
     text-align: center;
     text-transform: uppercase;
     z-index: 90;
+  }
+  &__flex-container {
+    display: flex;
+    justify-content: center;
   }
 }
 
@@ -67,10 +71,6 @@
 }
 
 @media (min-width: 768px) {
-  .event-calendar__flex-container {
-    display: flex;
-    justify-content: center;
-  }
   .calendar {
     font-size: 1.3rem;
     &__header {
@@ -114,5 +114,14 @@
         font-family: $accent;
       }
     }
+  }
+}
+
+@media (min-width: 1024px) {
+  .event-calendar {
+    padding: 7rem $outter-desktop;
+  }
+  .calendar {
+    margin-top: 3rem;
   }
 }
