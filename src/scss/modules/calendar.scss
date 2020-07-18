@@ -1,12 +1,15 @@
 .event-calendar {
+  background-color: $dark-gray;
+  box-shadow: $top-shadow, $bottom-shadow;
   padding: $outter-mobile;
   &__title {
-    color: $black;
+    color: $primary;
     font-family: $accent;
     font-size: 2.4rem;
     margin: 1rem 0;
     position: relative;
     text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     text-transform: uppercase;
     z-index: 90;
   }
@@ -22,7 +25,7 @@
     display: none;
   }
   &__event {
-    background-color: #eee;
+    background-color: $light-gray;
     display: block;
     margin-bottom: 2rem;
     padding: 0.5rem;
@@ -31,7 +34,7 @@
       //font-weight: 700;
     }
     &--past {
-      background-color: #f7f7f7;
+      background-color: $light-gray;
       color: $gray;
     }
     &--canceled {
@@ -72,7 +75,9 @@
 
 @media (min-width: 768px) {
   .calendar {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
     font-size: 1.3rem;
+    margin-top: 2rem;
     &__header {
       background-color: #eee;
       display: table-header-group;
@@ -84,6 +89,7 @@
     &__event {
       display: table-row;
       &--current {
+        background-color: $primary-light;
         font-weight: 700;
       }
     }

@@ -1,14 +1,22 @@
 // COLOURS
 
-$primary: #5BDCF0;
-$primary-dark: #40A1A8;
-$primary-light: #B0FAFF;
-$primary-lighter: #D7FCFF;
+$primary: #fad016;
+$primary-dark: #947c47;
+$primary-darker: #574521;
+$primary-light: #fff58b;
+$primary-lighter: #fffac5;
+
+// $primary: #5BDCF0;
+// $primary-dark: #40A1A8;
+// $primary-light: #B0FAFF;
+// $primary-lighter: #D7FCFF;
 
 $white: #fff;
 $black: #000;
 
-$gray: #aaa;
+$gray: #888;
+$dark-gray: #353535;
+$light-gray: #eee;
 
 
 // FONTS
@@ -20,4 +28,9 @@ $accent: 'Prosto One', cursive;
 // PADDING
 
 $outter-desktop: 1.5rem;
-$outter-mobile: 2rem;
+$outter-mobile: 4rem 2rem;
+
+// SECTION SHADOW
+
+$top-shadow: 0px -8px 16px rgba(95, 8, 8, 0.35);
+$bottom-shadow: 0px 8px 16px rgba(0, 0, 0, 0.35);

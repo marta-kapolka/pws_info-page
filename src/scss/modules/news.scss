@@ -3,6 +3,7 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  box-shadow: $bottom-shadow;
   padding: $outter-mobile;
   position: relative;
   &__shadow {
@@ -20,13 +21,13 @@
     z-index: 0;
   }
   &__title {
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     color: $white;
     font-family: $accent;
     font-size: 2.4rem;
     margin: 1rem 0;
     position: relative;
     text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     text-transform: uppercase;
     z-index: 60;
   }
@@ -39,8 +40,9 @@
 
 .event {
   background-color: $white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
   margin: 1.5rem 0;
-  max-width: 35rem;
+  max-width: 37rem;
   position: relative;
   width: 100%;
   z-index: 50;
@@ -53,7 +55,7 @@
     z-index: 90;
   }
   &__number {
-    background: rgba(176, 250, 255, 0.5);
+    background: rgba(255, 245, 139, 0.5);
     padding: 0.7rem 0.5rem;
     position: relative;
     text-align: right;
@@ -96,9 +98,13 @@
     &--last {
       padding-bottom: 2rem;
     }
+    &--soon {
+      font-style: italic;
+      padding: 0;
+    }
   }
   &__link {
-    color: $primary-dark;
+    color: $primary-darker;
   }
 }
 
@@ -117,5 +123,10 @@
     &__shadow {
       height: 30rem;
     }
+    
+  }
+  .event {
+    margin-left: 4rem;
+    margin-right: 4rem;
   }
 }
