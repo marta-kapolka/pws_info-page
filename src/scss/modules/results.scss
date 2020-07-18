@@ -13,10 +13,21 @@
     text-transform: uppercase;
     z-index: 90;
   }
+  &__subtitle {
+    color: $black;
+    font-family: $accent;
+    font-size: 1.8rem;
+    margin: 2rem 0;
+    position: relative;
+    text-align: center;
+    z-index: 90;
+  }
   &__flex-container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
+    margin: 3rem auto 0 auto;
+    max-width: 80rem;
   }
 }
 
@@ -24,13 +35,11 @@
   display: inline-block;
   font-family: $accent;
   height: 9rem;
-  margin: 1.5rem 1rem;
+  margin: 1.5rem .5rem;
+  max-width: 34rem;
   position: relative;
   width: 100%;
-  &--short {
-    margin-left: 2.5rem;
-    width: 11.5rem;
-  }
+  
   &__description {
     align-items: center;
     background-color: $white;
@@ -38,15 +47,14 @@
     display: flex;
     font-size: 2rem;
     height: 8rem;
+    justify-content: center;
     line-height: 1.2;
+    padding: 1.5rem;
     position: absolute;
     text-align: center;
     text-transform: uppercase;
     top: 0.5rem;
     width: calc(100% - 9.5rem);
-    &--short {
-      clip-path: none;
-    }
   }
   &__category {
     align-items: center;
@@ -65,5 +73,21 @@
     fill: $white;
     height: 6rem;
     width: 6rem;
+    &--small {
+        height: 5rem;
+        width: 5rem;
+    }
   }
+}
+
+@media (min-width: 768px) {
+    .results {
+        padding: 7rem 1.5rem;
+        &__flex-container {
+            justify-content: space-around;
+        }
+    }
+    .result {
+        width: 34rem;
+    }
 }
