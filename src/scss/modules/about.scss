@@ -1,0 +1,23 @@
+.about {
+  background-color: $white;
+  padding: $outter-mobile;
+  &__title {
+    color: $black;
+    font-family: $accent;
+    font-size: 2.4rem;
+    margin: 1rem 0;
+    position: relative;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  &__text {
+      font-family: $text;
+      font-size: 1.6rem;
+      line-height: 1.4;
+      margin: 0 auto;
+      max-width: 77rem;
+      text-align: justify;
+      text-indent: 40px;
+      width: 100%;
+  }
+}
