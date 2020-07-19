@@ -27,7 +27,7 @@
   &__event {
     background-color: $light-gray;
     display: block;
-    margin-bottom: 2rem;
+    margin-bottom: .2rem;
     padding: 0.5rem;
     &--current {
       background-color: $primary-lighter;
@@ -35,7 +35,7 @@
     }
     &--past {
       background-color: $light-gray;
-      color: $gray;
+      color: $dark-gray;
     }
     &--canceled {
       text-decoration: line-through;
@@ -88,9 +88,13 @@
     }
     &__event {
       display: table-row;
+      font-weight: 700;
       &--current {
         background-color: $primary-light;
-        font-weight: 700;
+        
+      }
+      &--past {
+        font-weight: 400;
       }
     }
     &__data {
