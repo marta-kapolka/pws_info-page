@@ -23,7 +23,7 @@
 }
 
 .rules {
-  padding: 2rem 0;
+  padding-top: 4rem;
   &__title {
     font-family: $accent;
     font-size: 2rem;
@@ -58,7 +58,6 @@
     background-color: $primary-light;
     clip-path: polygon(15px 0%, 100% 0%, 100% 100%, 0% 100%);
     display: flex;
-
     height: 8rem;
     justify-content: center;
     line-height: 1.2;
@@ -79,7 +78,7 @@
   &__category {
     align-items: center;
     background-color: $primary;
-    clip-path: polygon(15px 0%, 100% 0%, 95px 100%, 0% 100%);
+    clip-path: polygon(15px 0%, 100% 0%, calc(100% - 15px) 100%, 0% 100%);
     color: $white;
     display: flex;
     font-size: 3.4rem;
@@ -99,12 +98,50 @@
 }
 
 .clubs {
+    padding-top: 4rem;
+  &__flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 120rem;
+  }
   &__title {
     font-family: $accent;
     font-size: 2rem;
     margin: 1rem 0;
     text-align: center;
     text-transform: uppercase;
+  }
+}
+
+.club {
+  background-color: $white;
+  clip-path: polygon(15px 0%, 100% 0%, calc(100% - 15px) 100%, 0% 100%);
+  display: inline-block;
+  height: 10rem;
+  margin: 1rem;
+  padding: 1rem;
+  &__shadow-container {
+    display: inline-block;
+    transition: all 0.15s ease-in-out;
+    &:hover {
+      filter: drop-shadow(4px 4px 8px rgba(0, 0, 0, 0.25));
+      transform: scale(1.03);
+    }
+  }
+  &__logo {
+    display: block;
+    height: 80%;
+    margin: 0 auto;
+    max-width: 16rem;
+    object-fit: contain;
+  }
+  &__name {
+    font-family: $accent;
+    font-size: 1.4rem;
+    margin: 0.5rem 1rem 0 0;
+    text-align: center;
   }
 }
 
