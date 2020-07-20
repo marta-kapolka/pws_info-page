@@ -1,5 +1,4 @@
 .about {
-  background-color: $white;
   padding: $outter-mobile;
   &__title {
     color: $black;
@@ -51,6 +50,7 @@
   transition: all 0.15s ease-in-out;
   width: 100%;
   &:hover {
+    filter: drop-shadow(0 0 16px rgba(0, 0, 0, 0.25));
     transform: scale(1.05);
   }
   &__description {
@@ -127,22 +127,21 @@
     display: inline-block;
     transition: all 0.15s ease-in-out;
     &:hover {
-      filter: drop-shadow(4px 4px 8px rgba(0, 0, 0, 0.25));
+      filter: drop-shadow(0 0 12px rgba(0, 0, 0, 0.25));
       transform: scale(1.03);
     }
     &--nolink {
-        &:hover {
-            filter: none;
-            transform: none;
-        }
+      &:hover {
+        filter: none;
+        transform: none;
+      }
     }
-
   }
   &__logo {
     display: block;
     height: 65%;
     margin: 0 auto;
-    max-width: 15rem;
+    max-width: 13rem;
     object-fit: contain;
   }
   &__name {
@@ -171,9 +170,9 @@
 }
 
 @media (min-width: 1920px) {
-    .clubs {
-        &__flex-container {
-          max-width: none;
-        }
+  .clubs {
+    &__flex-container {
+      max-width: none;
     }
+  }
 }
