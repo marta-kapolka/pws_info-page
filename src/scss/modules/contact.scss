@@ -31,4 +31,39 @@
     text-transform: uppercase;
     z-index: 60;
   }
+  &__links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 2rem;
+  }
+  &__form {
+    height: 40rem;
+    width: 80%;
+  }
+}
+
+.contact-link {
+  align-items: center;
+  display: flex;
+  margin: 1rem 4rem;
+  position: relative;
+  z-index: 60;
+  &__icon {
+    display: inline-block;
+    fill: $white;
+    width: 4rem;
+  }
+  &__text {
+    color: $white;
+    font-family: $accent;
+    font-size: 2rem;
+    margin-left: 2rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .contact {
+    padding: 7rem 1.5rem;
+  }
 }
