@@ -1,0 +1,34 @@
+.contact {
+  background-image: url("../assets/img/background-contact.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: $top-shadow;
+  padding: $outter-mobile;
+  position: relative;
+  &__shadow {
+    background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.6) 20%,
+      rgba(0, 0, 0, 0) 100%
+    );
+    height: 20rem;
+    left: 0;
+    max-height: 100%;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 0;
+  }
+  &__title {
+    color: $white;
+    font-family: $accent;
+    font-size: 2.4rem;
+    margin: 1rem 0;
+    position: relative;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    text-transform: uppercase;
+    z-index: 60;
+  }
+}
