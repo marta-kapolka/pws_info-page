@@ -23,7 +23,7 @@
 }
 
 .rules {
-  padding-top: 4rem;
+  padding-top: 6rem;
   &__title {
     font-family: $accent;
     font-size: 2rem;
@@ -98,7 +98,7 @@
 }
 
 .clubs {
-    padding-top: 4rem;
+  padding-top: 6rem;
   &__flex-container {
     display: flex;
     flex-wrap: wrap;
@@ -119,9 +119,10 @@
   background-color: $white;
   clip-path: polygon(15px 0%, 100% 0%, calc(100% - 15px) 100%, 0% 100%);
   display: inline-block;
-  height: 10rem;
+  height: 12rem;
   margin: 1rem;
-  padding: 1rem;
+  min-width: 13rem;
+  padding: 1rem 2rem;
   &__shadow-container {
     display: inline-block;
     transition: all 0.15s ease-in-out;
@@ -129,12 +130,19 @@
       filter: drop-shadow(4px 4px 8px rgba(0, 0, 0, 0.25));
       transform: scale(1.03);
     }
+    &--nolink {
+        &:hover {
+            filter: none;
+            transform: none;
+        }
+    }
+
   }
   &__logo {
     display: block;
-    height: 80%;
+    height: 65%;
     margin: 0 auto;
-    max-width: 16rem;
+    max-width: 15rem;
     object-fit: contain;
   }
   &__name {
