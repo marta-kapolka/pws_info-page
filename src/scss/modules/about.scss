@@ -35,7 +35,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin: 1rem auto 0 auto;
+    margin: 2rem auto 0 auto;
     max-width: 80rem;
   }
 }
@@ -104,7 +104,7 @@
     flex-wrap: wrap;
     justify-content: center;
     margin: 0 auto;
-    max-width: 120rem;
+    max-width: 100rem;
   }
   &__title {
     font-family: $accent;
@@ -168,4 +168,12 @@
   .about {
     padding: 7rem 1.5rem;
   }
+}
+
+@media (min-width: 1920px) {
+    .clubs {
+        &__flex-container {
+          max-width: none;
+        }
+    }
 }
