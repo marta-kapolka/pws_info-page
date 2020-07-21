@@ -31,15 +31,19 @@
     text-transform: uppercase;
     z-index: 60;
   }
+  &__text {
+    color: $white;
+    font-family: $text;
+    font-size: 1.6rem;
+    position: relative;
+    text-align: center;
+    z-index: 60;
+  }
   &__links {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin-top: 2rem;
-  }
-  &__form {
-    height: 40rem;
-    width: 80%;
+    margin-top: 4rem;
   }
 }
 
@@ -59,6 +63,59 @@
     font-family: $accent;
     font-size: 2rem;
     margin-left: 2rem;
+  }
+}
+
+.form {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: $white;
+  font-family: $accent;
+  font-size: 1.6rem;
+  margin: 2rem auto;
+  max-width: 80rem;
+  padding: 2rem 1rem;
+  width: 100%;
+  &__flex-container {
+    align-items: flex-end;
+    display: flex;
+    margin-bottom: 2rem;
+    width: 100%;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  &__input {
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    border-bottom: 1px solid $white;
+    color: $white;
+    flex-grow: 1;
+    font-family: $text;
+    height: 2rem;
+    min-width: 0;
+  }
+  &__label {
+    margin-right: 1rem;
+  }
+}
+
+@media (max-width: 420px) {
+  .contact-link {
+    &__icon {
+      width: 3rem;
+    }
+    &__text {
+      font-size: 1.8rem;
+      margin-left: 1rem;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .contact {
+    &__form {
+      width: 80%;
+    }
   }
 }
 
