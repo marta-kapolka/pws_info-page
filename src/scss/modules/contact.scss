@@ -68,7 +68,7 @@
 
 .form {
   backdrop-filter: blur(2px);
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.75);
   color: $white;
   display: flex;
   flex-wrap: wrap;
@@ -98,9 +98,9 @@
     font-size: 2rem;
     font-weight: 300;
     min-width: 0;
-    padding: .5rem 1rem 0;
+    padding: 0.5rem 1rem 0;
     &--long {
-    
+      // SZEROKOŚĆ!!?
     }
   }
   &__label {
@@ -113,23 +113,29 @@
 
 .submit {
   &__button {
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0);
     border: none;
+    clip-path: polygon(15px 0%, 100% 0%, calc(100% - 15px) 100%, 0% 100%);
     color: $white;
     cursor: pointer;
     font-family: $accent;
     font-size: 1.6rem;
     margin-top: 1rem;
-    padding: 2rem 2rem 2rem 6rem;
+    padding: 2rem 3rem 2rem 7rem;
     position: relative;
     text-transform: uppercase;
+    transition: all .15s ease-in-out;;
     &::before {
       content: url("../assets/icons/send.svg");
       fill: rgb(255, 255, 255);
-      left: 2rem;
+      left: 3rem;
       position: absolute;
       height: 2.2rem;
       width: 2.2rem;
+    }
+    &:hover {
+      background-color: rgba(0, 0, 0, 0.8);
+      transform: scale(1.05);
     }
   }
 }
@@ -149,7 +155,9 @@
   }
   .submit {
     &__button {
+      background-color: rgba(0, 0, 0, 0.8);
       bottom: 0;
+      clip-path: none;
       left: 0;
       position: absolute;
       width: 100%;
