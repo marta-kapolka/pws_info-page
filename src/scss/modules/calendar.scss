@@ -90,7 +90,6 @@
       font-weight: 700;
       &--current {
         background-color: $primary-light;
-        
       }
       &--past {
         font-weight: 400;
@@ -107,20 +106,19 @@
       &:first-child {
         border-bottom: none;
         font-family: $text;
-        font-weight: 400;
+        font-weight: inherit;
         text-transform: none;
         &::before {
           border-bottom: none;
-        }
-        &:first-child .calendar__data-header {
-          font-family: $accent;
         }
       }
       &:last-child {
         max-width: 12rem;
       }
-      &--header {
+      &--header:first-child {
         font-family: $accent;
+        font-weight: bold;
+        text-transform: uppercase;
       }
     }
   }
