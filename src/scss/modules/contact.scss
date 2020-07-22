@@ -67,6 +67,7 @@
 }
 
 .form {
+  backdrop-filter: blur(2px);
   background-color: rgba(0, 0, 0, 0.6);
   color: $white;
   display: flex;
@@ -124,8 +125,11 @@
     text-transform: uppercase;
     &::before {
       content: url("../assets/icons/send.svg");
+      fill: rgb(255, 255, 255);
       left: 2rem;
       position: absolute;
+      height: 2.2rem;
+      width: 2.2rem;
     }
   }
 }
