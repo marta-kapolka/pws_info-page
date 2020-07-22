@@ -49,14 +49,23 @@
 
 .contact-link {
   align-items: center;
+  clip-path: polygon(15px 0%, 100% 0%, calc(100% - 15px) 100%, 0% 100%);
   display: flex;
-  margin: 1rem 4rem;
+  margin: 0 1rem;
+  padding: 1rem 3rem;
   position: relative;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  transition: all .15s ease-in-out;
   z-index: 60;
-  &__icon {
+  &::before {
     display: inline-block;
-    fill: $white;
-    width: 4rem;
+    width: 3.5rem;
+  }
+  &--mail::before {
+    content: url("../assets/icons/email.svg");
+  }
+  &--facebook::before {
+    content: url("../assets/icons/facebook.svg");
   }
   &__text {
     color: $white;
@@ -64,18 +73,22 @@
     font-size: 2rem;
     margin-left: 2rem;
   }
+  &:hover {
+    background-color: rgba(0, 0, 0, 0.6);
+    transform: scale(1.05);
+  }
 }
 
 .form {
-  backdrop-filter: blur(2px);
-  background-color: rgba(0, 0, 0, 0.75);
+  backdrop-filter: blur(4px);
+  background-color: rgba(0, 0, 0, 0.65);
   color: $white;
   display: flex;
   flex-wrap: wrap;
   font-family: $accent;
   font-size: 1.6rem;
   justify-content: flex-end;
-  margin: 2rem auto;
+  margin: 5rem auto 2rem;
   max-width: 80rem;
   padding: 2rem 1rem;
   width: 100%;
@@ -124,7 +137,7 @@
     padding: 2rem 3rem 2rem 7rem;
     position: relative;
     text-transform: uppercase;
-    transition: all .15s ease-in-out;;
+    transition: all .15s ease-in-out;
     &::before {
       content: url("../assets/icons/send.svg");
       fill: rgb(255, 255, 255);
