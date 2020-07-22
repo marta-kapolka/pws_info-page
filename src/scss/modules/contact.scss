@@ -74,7 +74,7 @@
   flex-wrap: wrap;
   font-family: $accent;
   font-size: 1.6rem;
-  justify-content: center;
+  justify-content: flex-end;
   margin: 2rem auto;
   max-width: 80rem;
   padding: 2rem 1rem;
@@ -144,11 +144,24 @@
       margin-left: 1rem;
     }
   }
+  .form {
+    padding-bottom: 7rem;
+  }
+  .submit {
+    &__button {
+      bottom: 0;
+      left: 0;
+      position: absolute;
+      width: 100%;
+      &::before {
+        left: 30%;
+      }
+    }
+  }
 }
 
 @media (min-width: 768px) {
   .form {
-    justify-content: flex-end;
     padding: 3rem;
     width: 80%;
   }
