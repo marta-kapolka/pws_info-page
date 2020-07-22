@@ -548,10 +548,18 @@
           rundy wręczane są puchary, medale i dyplomy dla najlepszych.
           Szczegółowe informacje znajdują się w regulaminach poniżej.
         </p>
+        <p class="about__text">
+          Aktualnie funkcję Sędziego Głównego Pucharu pełni Marta Kapołka.
+        </p>
         <section class="rules">
           <h3 class="rules__title">Regulaminy</h3>
           <div class="rules__flex-container">
-            <a href="https://drive.google.com/file/d/19J0S5uhI5kOZt7qN10mpttqL9uls25JJ/view?usp=sharing" target="_blank" rel="noopener" class="rule">
+            <a
+              href="https://drive.google.com/file/d/19J0S5uhI5kOZt7qN10mpttqL9uls25JJ/view?usp=sharing"
+              target="_blank"
+              rel="noopener"
+              class="rule"
+            >
               <div class="rule__description">
                 <div class="rule__description rule__description--inner">
                   Regulamin podstawowy
@@ -588,7 +596,12 @@
                 </div>
               </div>
             </a>
-            <a href="https://drive.google.com/file/d/1QibeoFU1A6Y8uZPn-5qXWf2hGOYFGfUs/view?usp=sharing" target="_blank" rel="noopener" class="rule">
+            <a
+              href="https://drive.google.com/file/d/1QibeoFU1A6Y8uZPn-5qXWf2hGOYFGfUs/view?usp=sharing"
+              target="_blank"
+              rel="noopener"
+              class="rule"
+            >
               <div class="rule__description">
                 <div class="rule__description rule__description--inner">
                   Regulamin szczegółowy
@@ -729,7 +742,7 @@
               </a>
             </div>
 
-            <div class="club__shadow-container  club__shadow-container--nolink">
+            <div class="club__shadow-container club__shadow-container--nolink">
               <!-- <a href="" target="_blank" rel="noopener" class="club"> -->
               <div class="club">
                 <img
@@ -742,7 +755,11 @@
             </div>
 
             <div class="club__shadow-container">
-              <a href="http://beloc.okandaluzja.pl/" target="_blank" rel="noopener" class="club"
+              <a
+                href="http://beloc.okandaluzja.pl/"
+                target="_blank"
+                rel="noopener"
+                class="club"
                 ><img
                   src="../assets/img/club-logos/beloc.jpg"
                   class="club__logo"
@@ -755,7 +772,40 @@
       </section>
 
       <section class="contact" id="contact">
-        <h2>Kontakt</h2>
+        <div class="contact__shadow"></div>
+        <h2 class="contact__title">Kontakt</h2>
+        <div class="contact__links">
+          <a href="mailto:sedzia.pws@gmail.com" class="contact-link contact-link--mail">
+            <span class="contact-link__text">sedzia.pws@gmail.com</span>
+          </a>
+          <a
+            href="https://www.facebook.com/PSlMnO"
+            target="_blank"
+            rel="noopener"
+            class="contact-link contact-link--facebook"
+          >
+            <span class="contact-link__text">facebook.com/PSlMnO</span>
+          </a>
+        </div>
+        <form class="form">
+          <div class="form__flex-container">
+            <label class="form__label">imię:</label
+            ><input class="form__input" type="text" />
+          </div>
+          <div class="form__flex-container">
+            <label class="form__label">e&#8209;mail:</label
+            ><input class="form__input" type="email" />
+          </div>
+          <div class="form__flex-container">
+            <label class="form__label">wiadomość:</label
+            ><textarea class="form__input for__input--long" oninput='this.style.height = "";this.style.height = this.scrollHeight + "px"'></textarea>
+            <!-- oninput='this.style.height = "";this.style.height = this.scrollHeight + "px"' -->
+          </div>
+          <div class="submit">
+            <button class="submit__button">Wyślij</button>
+          </div>
+          <div class="form__clear-fix"></div>
+        </form>
       </section>
     </main>
     <footer>
@@ -788,6 +838,44 @@
         >
       </div>
       <!-- papierek -->
+
+      <div>
+        Icons made by
+        <a href="https://www.flaticon.com/authors/freepik" title="Freepik"
+          >Freepik</a
+        >
+        from
+        <a href="https://www.flaticon.com/" title="Flaticon"
+          >www.flaticon.com</a
+        >
+      </div>
+      <!-- fb -->
+
+      <div>
+        Icons made by
+        <a href="https://www.flaticon.com/authors/freepik" title="Freepik"
+          >Freepik</a
+        >
+        from
+        <a href="https://www.flaticon.com/" title="Flaticon"
+          >www.flaticon.com</a
+        >
+      </div>
+      <!-- mail -->
+
+      <div>
+        Icons made by
+        <a
+          href="https://www.flaticon.com/authors/pixel-perfect"
+          title="Pixel perfect"
+          >Pixel perfect</a
+        >
+        from
+        <a href="https://www.flaticon.com/" title="Flaticon"
+          >www.flaticon.com</a
+        >
+      </div>
+      <!-- send -->
     </footer>
   </body>
 </html>
