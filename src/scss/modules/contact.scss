@@ -67,10 +67,13 @@
 }
 
 .form {
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.6);
   color: $white;
+  display: flex;
+  flex-wrap: wrap;
   font-family: $accent;
   font-size: 1.6rem;
+  justify-content: center;
   margin: 2rem auto;
   max-width: 80rem;
   padding: 2rem 1rem;
@@ -80,8 +83,8 @@
     display: flex;
     margin-bottom: 2rem;
     width: 100%;
-    &:last-child {
-      margin-bottom: 0;
+    &:last-of-type {
+      margin-bottom: 1rem;
     }
   }
   &__input {
@@ -91,11 +94,39 @@
     color: $white;
     flex-grow: 1;
     font-family: $text;
-    height: 2rem;
+    font-size: 2rem;
+    font-weight: 300;
     min-width: 0;
+    padding: .5rem 1rem 0;
+    &--long {
+    
+    }
   }
   &__label {
     margin-right: 1rem;
+  }
+  &__clear-fix {
+    clear: both;
+  }
+}
+
+.submit {
+  &__button {
+    background-color: rgba(0, 0, 0, 0.8);
+    border: none;
+    color: $white;
+    cursor: pointer;
+    font-family: $accent;
+    font-size: 1.6rem;
+    margin-top: 1rem;
+    padding: 2rem 2rem 2rem 6rem;
+    position: relative;
+    text-transform: uppercase;
+    &::before {
+      content: url("../assets/icons/send.svg");
+      left: 2rem;
+      position: absolute;
+    }
   }
 }
 
@@ -112,15 +143,21 @@
 }
 
 @media (min-width: 768px) {
-  .contact {
-    &__form {
-      width: 80%;
-    }
+  .form {
+    justify-content: flex-end;
+    padding: 3rem;
+    width: 80%;
   }
 }
 
 @media (min-width: 1024px) {
   .contact {
     padding: 7rem 1.5rem;
+  }
+  .form {
+    padding: 8rem 8rem 4rem;
+    &__flex-container {
+      margin-bottom: 4rem;
+    }
   }
 }

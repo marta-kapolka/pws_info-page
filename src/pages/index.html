@@ -846,8 +846,13 @@
           </div>
           <div class="form__flex-container">
             <label class="form__label">wiadomość:</label
-            ><textarea class="form__input"></textarea>
+            ><textarea class="form__input for__input--long" oninput='this.style.height = "";this.style.height = this.scrollHeight + "px"'></textarea>
+            <!-- oninput='this.style.height = "";this.style.height = this.scrollHeight + "px"' -->
           </div>
+          <div class="submit">
+            <button class="submit__button">Wyślij</button>
+          </div>
+          <div class="form__clear-fix"></div>
         </form>
       </section>
     </main>
@@ -905,6 +910,20 @@
         >
       </div>
       <!-- mail -->
+
+      <div>
+        Icons made by
+        <a
+          href="https://www.flaticon.com/authors/pixel-perfect"
+          title="Pixel perfect"
+          >Pixel perfect</a
+        >
+        from
+        <a href="https://www.flaticon.com/" title="Flaticon"
+          >www.flaticon.com</a
+        >
+      </div>
+      <!-- send -->
     </footer>
   </body>
 </html>
