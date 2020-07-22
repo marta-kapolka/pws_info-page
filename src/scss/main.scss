@@ -1,6 +1,6 @@
 @import "~normalize.css";
 
-@import url('https://fonts.googleapis.com/css2?family=Prosto+One&family=Roboto:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Prosto+One&family=Roboto:wght@300;400;500;700&display=swap');
 
 @import "_variables";
 @import "modules/navigation.scss";
@@ -10,6 +10,7 @@
 @import "modules/results.scss";
 @import "modules/about.scss";
 @import "modules/contact.scss";
+@import "modules/footer.scss";
 
 *,
 *::before,

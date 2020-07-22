@@ -3,7 +3,7 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  box-shadow: $top-shadow;
+  box-shadow: $top-shadow, $bottom-shadow;
   padding: $outter-mobile;
   position: relative;
   &__shadow {
@@ -113,7 +113,7 @@
     min-width: 0;
     padding: 0.5rem 1rem 0;
     &--long {
-      // SZEROKOŚĆ!!?
+      // WYSOKOŚĆ!!?
     }
   }
   &__label {
