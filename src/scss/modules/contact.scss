@@ -62,10 +62,10 @@
     width: 3.5rem;
   }
   &--mail::before {
-    content: url("../assets/icons/email.svg");
+    content: url("../assets/icons/mail.svg");
   }
   &--facebook::before {
-    content: url("../assets/icons/facebook.svg");
+    content: url("../assets/icons/fb.svg");
   }
   &__text {
     color: $white;
@@ -143,8 +143,7 @@
       fill: rgb(255, 255, 255);
       left: 3rem;
       position: absolute;
-      height: 2.2rem;
-      width: 2.2rem;
+      width: 2.4rem;
     }
     &:hover {
       background-color: rgba(0, 0, 0, 0.8);

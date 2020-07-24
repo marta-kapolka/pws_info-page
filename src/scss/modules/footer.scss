@@ -7,14 +7,14 @@
   line-height: 2;
   padding: $outter-mobile;
   text-align: center;
-  &__link {
-    color: $white;
-    font-weight: 500;
-    transition: all 0.15s ease-in-out;
-    &:hover {
-      color: $primary;
-    }
-  }
+  // &__link {
+  //   color: $white;
+  //   font-weight: 500;
+  //   transition: all 0.15s ease-in-out;
+  //   &:hover {
+  //     color: $primary;
+  //   }
+  // }
   &__before {
     &::before {
       content: url("../assets/icons/ino.svg");
