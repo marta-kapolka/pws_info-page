@@ -144,7 +144,22 @@
       media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"
     />
   </head>
-  <body>
+  <body id="body">
+    <div class="back-to-top">
+      <a href="#body" class="back-to-top__button">
+        <svg
+          class="back-to-top__arrow"
+          xmlns="http://www.w3.org/2000/svg"
+          shape-rendering="geometricPrecision"
+          text-rendering="geometricPrecision"
+          image-rendering="optimizeQuality"
+          viewBox="0 0 72 60"
+        >
+          <polyline points="1.1 58.7 36.1 23.7 71.1 58.7 " />
+          <polyline points="1.2 38.4 36.2 3.4 71.2 38.4 " />
+        </svg>
+      </a>
+    </div>
     <div>
       <button class="hamburger hamburger--js">menu</button>
       <nav class="navigation navigation--js">
@@ -635,7 +650,6 @@
               </div>
               <!-- </a> -->
             </div>
-
           </div>
         </section>
       </section>
@@ -684,10 +698,10 @@
       </section>
     </main>
     <footer class="footer">
-      <p
-        >All the stuff made<span title="ino" class="footer__before"></span>by Marta
-        Kapołka</p
-      >
+      <p>
+        All the stuff made<span title="ino" class="footer__before"></span>by
+        Marta Kapołka
+      </p>
       <p>&#9426; 2020</p>
     </footer>
   </body>

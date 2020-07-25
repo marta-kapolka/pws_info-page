@@ -1,0 +1,23 @@
+.back-to-top {
+  height: 100vh;
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+  &__button {
+    background: rgba(0, 0, 0, .6);
+    border: none;
+    bottom: 2rem;
+    cursor: pointer;
+    height: 5rem;
+    padding: .5rem;
+    position: absolute;
+    right: 2rem;
+    width: 5rem;
+    z-index: 100;
+  }
+  &__arrow {
+    fill: none;
+    stroke-width: 4;
+    stroke: $primary;
+  }
+}
