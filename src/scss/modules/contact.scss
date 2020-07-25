@@ -51,7 +51,7 @@
   align-items: center;
   clip-path: polygon(15px 0%, 100% 0%, calc(100% - 15px) 100%, 0% 100%);
   display: flex;
-  margin: 0 1rem;
+  margin: 0 1rem 1rem;
   padding: 1rem 3rem;
   position: relative;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
@@ -88,7 +88,7 @@
   font-family: $accent;
   font-size: 1.6rem;
   justify-content: flex-end;
-  margin: 5rem auto 2rem;
+  margin: 4rem auto 2rem;
   max-width: 80rem;
   padding: 2rem 1rem;
   width: 100%;
