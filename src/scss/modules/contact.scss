@@ -108,13 +108,11 @@
     color: $white;
     flex-grow: 1;
     font-family: $text;
-    font-size: 2rem;
+    font-size: 1.8rem;
     font-weight: 300;
     min-width: 0;
-    padding: 0.5rem 1rem 0;
-    &--long {
-      height: 2rem;
-    }
+    overflow: hidden;
+    padding: 0.5rem .5rem 0;
   }
   &__label {
     margin-right: 1rem;
