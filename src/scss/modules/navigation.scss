@@ -1,6 +1,7 @@
 .navigation {
     background-color: $white;
     display: none;
+    // height: 100vh;
     padding: 5rem 0;
     position: fixed;
     text-align: center;
@@ -37,6 +38,7 @@
 @media (min-width: 1024px) {
     .navigation {
         display: flex;
+        height: auto;
         justify-content: flex-end;
         padding: .6rem;
         position: fixed;
