@@ -23,6 +23,12 @@
     text-align: justify;
     text-indent: 40px;
     width: 100%;
+    &:first-of-type {
+      margin-top: 2rem;
+    }
+    &:last-of-type {
+      margin-bottom: 2rem;
+    }
   }
   &__flex-container {
     display: flex;
@@ -42,11 +48,10 @@
     padding: 0.5rem;
     &--current {
       background-color: $primary-lighter;
-      //font-weight: 700;
     }
     &--past {
       background-color: $light-gray;
-      color: $dark-gray;
+      color: $gray;
     }
     &--canceled {
       text-decoration: line-through;
@@ -85,6 +90,13 @@
 }
 
 @media (min-width: 768px) {
+  .event-calendar {
+  &__description {
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+  }
   .calendar {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
     font-size: 1.3rem;
@@ -104,6 +116,7 @@
         background-color: $primary-light;
       }
       &--past {
+        color: $dark-gray;
         font-weight: 400;
       }
     }
