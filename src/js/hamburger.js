@@ -22,4 +22,5 @@ navigationMenu.addEventListener('click', () => {
     for (const stick of sticks) {
         stick.classList.remove('hamburger--open')
     }
+    body.classList.remove('no-scroll');
 });
