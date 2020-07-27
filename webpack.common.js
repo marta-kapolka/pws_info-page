@@ -8,6 +8,7 @@ module.exports = {
     hamburger: "./src/js/hamburger.js",
     message: "./src/js/messagefield-height.js",
     arrow: "./src/js/backtotop-arrow.js",
+    year: "./src/js/footer-year.js",
   },
   output: {
     filename: "[name].[hash:8].js",
@@ -81,7 +82,7 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: "./src/pages/index.html",
       inject: true,
-      chunks: ["index", "hamburger", "message", "arrow"],
+      chunks: ["index", "hamburger", "message", "arrow", "year"],
       filename: "index.html",
     }),
   ],
