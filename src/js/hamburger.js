@@ -24,3 +24,19 @@ navigationMenu.addEventListener('click', () => {
     }
     body.classList.remove('no-scroll');
 });
+
+function changeHamburgerStyle() {
+    if (window.pageYOffset >= 1 && !navigationMenu.classList.contains('navigation--open')) {
+        hamburgerButton.classList.add('hamburger--scroll');
+        for (const stick of sticks) {
+            stick.classList.add('stick--scroll')
+        }
+    } else {
+        hamburgerButton.classList.remove('hamburger--scroll');
+        for (const stick of sticks) {
+            stick.classList.remove('stick--scroll')
+        }
+    }
+}
+
+window.addEventListener('scroll', changeHamburgerStyle);
