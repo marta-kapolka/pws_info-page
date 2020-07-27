@@ -7,6 +7,7 @@ module.exports = {
     index: "./src/js/index.js",
     hamburger: "./src/js/hamburger.js",
     message: "./src/js/messagefield-height.js",
+    arrow: "./src/js/backtotop-arrow.js",
   },
   output: {
     filename: "[name].[hash:8].js",
@@ -80,7 +81,7 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: "./src/pages/index.html",
       inject: true,
-      chunks: ["index", "hamburger", "message"],
+      chunks: ["index", "hamburger", "message", "arrow"],
       filename: "index.html",
     }),
   ],
