@@ -12,6 +12,18 @@
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     text-transform: uppercase;
   }
+  &__description {
+    color: $white;
+    font-family: $text;
+    font-size: 1.6rem;
+    font-weight: 300;
+    line-height: 1.4;
+    margin: 0 auto;
+    max-width: 77rem;
+    text-align: justify;
+    text-indent: 40px;
+    width: 100%;
+  }
   &__flex-container {
     display: flex;
     justify-content: center;
