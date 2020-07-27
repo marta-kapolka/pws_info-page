@@ -1,56 +1,93 @@
 .navigation {
-    background-color: $white;
-    display: none;
-    // height: 100vh;
-    padding: 5rem 0;
-    position: fixed;
-    text-align: center;
-    width: 100%;
-    z-index: 95;
-    &__link {
-        display: block;
-        font-family: $accent;
-        font-size: 1.8rem;
-        padding: 1.5rem 1.5rem;
-        text-transform: uppercase;
-        transition: color .15s ease-in-out;
-        &:hover {
-            color: $primary;
-        }
+  background-color: $white;
+  display: none;
+  height: 100vh;
+  padding: 10rem 0;
+  position: fixed;
+  text-align: center;
+  width: 100%;
+  z-index: 95;
+  &__link {
+    display: block;
+    font-family: $accent;
+    font-size: 1.8rem;
+    padding: 2rem 1.5rem;
+    text-transform: uppercase;
+    transition: color 0.15s ease-in-out;
+    &:hover {
+      color: $primary;
     }
-    &--open {
-        display: block;
-    }
+  }
+  &--open {
+    display: block;
+  }
 }
 
 .hamburger {
-    font-size: 2rem;
-    position: fixed;
-    right: 1rem;
-    top: 1rem;
-    z-index: 100;
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+  height: 3.6rem;
+  outline: none;
+  position: fixed;
+  right: 2rem;
+  top: 2rem;
+  transition: all .25s ease-in-out;
+  width: 4rem;
+  z-index: 100;
+  &--open {
+      width: 3.2rem;
+  }
+  &__stick {
+    background-color: $black;
+    height: 0.4rem;
+    right: 0;
+    position: absolute;
+    transform-origin: 100% 50%;
+    transition: all .25s ease-in-out;
+    width: 100%;
+    &--top {
+      top: 0;
+      &.hamburger--open {
+        transform: rotate(-45deg);
+        width: 4.6rem;
+      }
+    }
+    &--middle {
+      top: 1.6rem;
+      &.hamburger--open {
+        width: 0;
+      }
+    }
+    &--bottom {
+      bottom: 0;
+      &.hamburger--open {
+        transform: rotate(45deg);
+        transform-origin: 100% 50%;
+        width: 4.6rem;
+      }
+    }
+  }
 }
 
 @media (min-width: 768px) {
-    
 }
 
 @media (min-width: 1024px) {
-    .navigation {
-        display: flex;
-        height: auto;
-        justify-content: flex-end;
-        padding: .6rem;
-        position: fixed;
-        right: 0;
-        top: 0;
-        z-index: 80;
-        &__link {
-            display: inline-block;
-            font-size: 1.6rem;
-        }
+  .navigation {
+    display: flex;
+    height: auto;
+    justify-content: flex-end;
+    padding: 0.6rem;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 80;
+    &__link {
+      display: inline-block;
+      font-size: 1.6rem;
     }
-    .hamburger {
-        display: none;
-    }
+  }
+  .hamburger {
+    display: none;
+  }
 }
