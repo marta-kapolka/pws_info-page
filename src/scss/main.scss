@@ -1,6 +1,6 @@
 @import "~normalize.css";
 
-@import url('https://fonts.googleapis.com/css2?family=Prosto+One&family=Roboto:wght@300;400;500;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Prosto+One&family=Roboto:wght@300;400;500;700&display=swap");
 
 @import "_variables";
 @import "modules/navigation.scss";
@@ -24,7 +24,7 @@
 html {
   font-family: $text;
   font-size: 62.5%;
-  scroll-behavior: smooth;
+  scroll-behavior: auto;
 }
 
 body {
@@ -36,4 +36,10 @@ body {
 a {
   color: $black;
   text-decoration: none;
+}
+
+@media (min-width: 768px) {
+  html {
+    scroll-behavior: smooth;
+  }
 }
