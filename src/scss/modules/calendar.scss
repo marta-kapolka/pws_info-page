@@ -55,20 +55,38 @@
     &--past {
       background-color: $light-gray;
       color: $gray;
+      & .calendar__data:first-child::after {
+        content: "miniona";
+        font-family: $text;
+        padding-left: 3rem;
+        font-style: italic;
+        font-weight: 300;
+        text-transform: none;
+      }
     }
     &--canceled {
-      text-decoration: line-through;
+      & .calendar__data:first-child::after {
+        content: "odwołana";
+        font-family: $text;
+        padding-left: 3rem;
+        font-style: italic;
+        font-weight: 300;
+        text-transform: none;
+      }
+      & > .calendar__data:nth-child(n + 2):nth-child(-n + 6) {
+        text-decoration: line-through;
+      }
     }
     &--fold {
       & > .calendar__data:first-child {
         border: none;
         margin-bottom: 0;
-        padding: .5rem 0;
+        padding: 0.5rem 0;
         &::before {
           border: none;
         }
       }
-      & > .calendar__data:nth-child(n+2):nth-child(-n+6) {
+      & > .calendar__data:nth-child(n + 2):nth-child(-n + 6) {
         display: none;
       }
       & .calendar__button {
@@ -152,6 +170,9 @@
       &--past {
         color: $dark-gray;
         font-weight: 400;
+        & .calendar__data:first-child::after {
+          content: none;
+        }
       }
     }
     &__data {

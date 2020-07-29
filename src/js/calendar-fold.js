@@ -13,6 +13,9 @@ function calendarFold() {
         event.classList.add("calendar__event--fold");
       }
     }
+    const buttons = document.querySelectorAll(".calendar__button");
+
+    buttons.forEach(listenFoldButton);
   } else {
     for (const container of containers) {
       container.innerHTML = "";
@@ -36,11 +39,7 @@ function unFold(i) {
 // INITIAL CALENDAR FORM SETUP BASED ON INITIAL VIEWPORT WIDTH
 calendarFold();
 
-// CREATE TABLE OF BUTTONS IF CREATED BY calendarFold()
-const buttons = document.querySelectorAll(".calendar__button");
-
-buttons.forEach(listenFoldButton);
-
+// CHECK WIDTH WHEN VIEWPORT RESIZED
 window.addEventListener("resize", function () {
   calendarFold();
 });
