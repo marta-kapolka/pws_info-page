@@ -15,17 +15,18 @@ for (const container of containers) {
   }
 }
 
-calendarFold();
-
-const buttons = document.querySelectorAll('.calendar__button')
-
 function listenFoldButton(button, i) {
   button.addEventListener('click', function () { unFold(i); });
-  console.log("jest " + i);
 }
 
 function unFold(i) {
   events[i].classList.toggle('calendar__event--fold');
 }
+
+// INITIAL CALENDAR FORM SETUP BASED ON INITIAL VIEWPORT WIDTH
+calendarFold();
+
+// CREATE TABLE OF BUTTONS IF CREATED BY calendarFold()
+const buttons = document.querySelectorAll('.calendar__button')
 
 buttons.forEach(listenFoldButton);
