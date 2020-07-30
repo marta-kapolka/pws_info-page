@@ -5,3 +5,6 @@ import '../scss/main.scss';
 // registerSW();
 
 /* place your code below */
+
+export const tablet = window.matchMedia("(min-width: 768px)");
+export const desktop = window.matchMedia("(min-width: 1024px)");

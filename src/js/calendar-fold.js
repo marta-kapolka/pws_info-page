@@ -1,4 +1,4 @@
-const media = window.matchMedia("(min-width: 768px)");
+import {tablet} from './index.js'
 
 const events = document.querySelectorAll(".calendar__event--js");
 const containers = document.querySelectorAll(".calendar__button-container");
@@ -40,6 +40,6 @@ function unFold(i) {
 // INITIAL CALENDAR FORM SETUP BASED ON INITIAL VIEWPORT WIDTH
 calendarFold();
 
-media.addEventListener("change", function() {
+tablet.addEventListener("change", function() {
   calendarFold();
 });
