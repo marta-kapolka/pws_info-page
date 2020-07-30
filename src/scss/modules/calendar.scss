@@ -55,7 +55,7 @@
     &--past {
       background-color: $light-gray;
       color: $gray;
-      & .calendar__data:first-child::after {
+      &.calendar__event--fold .calendar__data:first-child::after {
         content: "miniona";
         font-family: $text;
         padding-left: 3rem;
@@ -65,7 +65,7 @@
       }
     }
     &--canceled {
-      & .calendar__data:first-child::after {
+      &.calendar__event--fold .calendar__data:first-child::after {
         content: "odwołana";
         font-family: $text;
         padding-left: 3rem;

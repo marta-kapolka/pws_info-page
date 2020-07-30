@@ -1,9 +1,10 @@
+const media = window.matchMedia("(min-width: 768px)");
+
 const events = document.querySelectorAll(".calendar__event--js");
 const containers = document.querySelectorAll(".calendar__button-container");
 
 function calendarFold() {
   let windowWidth = window.innerWidth;
-  console.log(windowWidth);
   if (windowWidth < 768) {
     for (const container of containers) {
       container.innerHTML = '<button class="calendar__button"></button>';
@@ -39,7 +40,6 @@ function unFold(i) {
 // INITIAL CALENDAR FORM SETUP BASED ON INITIAL VIEWPORT WIDTH
 calendarFold();
 
-// CHECK WIDTH WHEN VIEWPORT RESIZED
-window.addEventListener("resize", function () {
+media.addEventListener("change", function() {
   calendarFold();
 });
