@@ -1,11 +1,22 @@
 const arrow = document.querySelector('.arrow--js');
 
 function changeArrowVisibility() {
-    if (window.pageYOffset > (3 * window.innerHeight)) {
-        arrow.classList.add('visible');
+    if (window.pageYOffset > (2 * window.innerHeight)) {
+        arrow.classList.add('back-to-top--visible');
     } else {
-        arrow.classList.remove('visible');
+        arrow.classList.remove('back-to-top--visible');
     }
 }
 
+function autoScrollBehavior() {
+    document.querySelector('#html').style.scrollBehavior = "auto";
+}
+
+function changeScrollBehavior() {
+    document.querySelector('#html').style.scrollBehavior = "smooth";
+    setTimeout(autoScrollBehavior, 1);
+}
+
 window.addEventListener('scroll', changeArrowVisibility);
+
+arrow.addEventListener('click', changeScrollBehavior);
