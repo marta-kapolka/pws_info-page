@@ -33,18 +33,21 @@
 }
 
 .result {
-  display: inline-block;
+  align-items: center;
+  display: inline-flex;
   filter: $link-shadow-mobile;
   font-family: $accent;
   font-size: 1.6rem;
-  height: 8rem;
+  height: 6rem;
   margin: 1rem;
   max-width: 28rem;
   position: relative;
   transition: all 0.15s ease-in-out;
   width: 100%;
-  &:hover {
+  &:hover,
+  &:focus {
     filter: $link-shadow-hover;
+    outline-offset: 1rem;
     transform: scale(1.05);
   }
   &__description {
@@ -58,7 +61,6 @@
     position: absolute;
     text-align: center;
     text-transform: uppercase;
-    top: 0.5rem;
     width: 100%;
     &::before {
       background-color: $primary;

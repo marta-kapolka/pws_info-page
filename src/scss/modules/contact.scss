@@ -40,7 +40,7 @@
     z-index: 60;
   }
   &__links {
-    align-items: center   ;
+    align-items: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -50,32 +50,42 @@
 
 .contact-link {
   align-items: center;
-  clip-path: polygon(15px 0%, 100% 0%, calc(100% - 15px) 100%, 0% 100%);
   display: flex;
-  margin-bottom: 1rem;
-  padding: 1rem 2rem;
+  margin-bottom: 2rem;
   position: relative;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   transition: all 0.15s ease-in-out;
-  // width: 100%;
   z-index: 60;
-  &::before {
-    width: 3.5rem;
-  }
-  &--mail::before {
-    content: url("../assets/icons/mail.svg");
-  }
-  &--facebook::before {
-    content: url("../assets/icons/fb.svg");
-  }
   &__text {
+    clip-path: polygon(15px 0%, 100% 0%, calc(100% - 15px) 100%, 0% 100%);
     color: $white;
     font-family: $accent;
     font-size: 2rem;
-    margin-left: 2rem;
+    padding: 1rem 3rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    transition: all 0.15s ease-in-out;
+    &::before {
+      display: inline-block;
+      margin-right: 2rem;
+      width: 3.5rem;
+      vertical-align: -50%;
+    }
+    &--mail::before {
+      content: url("../assets/icons/mail.svg");
+    }
+    &--facebook::before {
+      content: url("../assets/icons/fb.svg");
+    }
+    &:hover {
+      background-clip: text;
+      background-color: rgba(0, 0, 0, 0.6);
+      transform: scale(1.05);
+    }
   }
-  &:hover {
+
+  &:focus-within {
     background-color: rgba(0, 0, 0, 0.6);
+    outline: auto;
+    outline-offset: .5rem;
     transform: scale(1.05);
   }
 }

@@ -3,54 +3,69 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Puchar Województwa Śląskiego w MnO</title>
-    <meta name="description" content="Strona z aktualnościami oraz podstawowymi informacjami dotyczącymi Pucharu Województwa Śląskiego w Marszach na Orientację." />
+    <title>Puchar Województwa Śląskiego w Marszach na Orientację</title>
+    <meta
+      name="description"
+      content="Strona z aktualnościami oraz podstawowymi informacjami dotyczącymi Pucharu Województwa Śląskiego w Marszach na Orientację."
+    />
     <!-- Open Graph -->
     <meta property="og:title" content="Puchar Województwa Śląskiego w MnO" />
-    <meta property="og:description" content="Strona z aktualnościami oraz podstawowymi informacjami dotyczącymi Pucharu Województwa Śląskiego w Marszach na Orientację." />
-    <meta property="og:url" content="https://marta-kapolka.github.io/pws_info-page/" />
+    <meta
+      property="og:description"
+      content="Strona z aktualnościami oraz podstawowymi informacjami dotyczącymi Pucharu Województwa Śląskiego w Marszach na Orientację."
+    />
+    <meta
+      property="og:url"
+      content="https://marta-kapolka.github.io/pws_info-page/"
+    />
     <meta
       property="og:image"
       content="https://github.com/marta-kapolka/pws_info-page/blob/master/src/assets/img/og_image.jpg"
     />
   </head>
   <body id="body">
-      <button class="hamburger hamburger--js">
-        <div class="hamburger__stick hamburger__stick--top"></div>
-        <div class="hamburger__stick hamburger__stick--middle"></div>
-        <div class="hamburger__stick hamburger__stick--bottom"></div>
-      </button>
-      <nav class="navigation navigation--js">
-        <a href="#news" class="navigation__link navigation__link--js"
-          >Najbliższe rundy</a
-        >
-        <a href="#results" class="navigation__link navigation__link--js"
-          >Klasyfikacje</a
-        >
-        <a href="#event-calendar" class="navigation__link navigation__link--js"
-          >Kalendarz 2020</a
-        >
-        <a href="#about" class="navigation__link navigation__link--js"
-          >O pucharze</a
-        >
-        <a href="#contact" class="navigation__link navigation__link--js"
-          >Kontakt</a
-        >
-      </nav>
+    <button class="hamburger hamburger--js">
+      <div class="hamburger__stick hamburger__stick--top"></div>
+      <div class="hamburger__stick hamburger__stick--middle"></div>
+      <div class="hamburger__stick hamburger__stick--bottom"></div>
+    </button>
+    <nav class="navigation navigation--js">
+      <a href="#news" class="navigation__link navigation__link--js"
+        >Najbliższe rundy</a
+      >
+      <a href="#results" class="navigation__link navigation__link--js"
+        >Klasyfikacje</a
+      >
+      <a href="#event-calendar" class="navigation__link navigation__link--js"
+        >Kalendarz 2020</a
+      >
+      <a href="#about" class="navigation__link navigation__link--js"
+        >O pucharze</a
+      >
+      <a href="#contact" class="navigation__link navigation__link--js"
+        >Kontakt</a
+      >
+    </nav>
+    <header class="header">
+      <div class="header__flex-container">
+        <img
+          class="header__logo"
+          src="../assets/img/logo.png"
+          alt="logo pucharu województwa śląskiego w marszach na orientację"
+        />
+        <h1 class="header__page-name">
+          Puchar Województwa<span class="header__nbsp"></span>Śląskiego
+          w Marszach<span class="header__nbsp"></span>na Orientację
+        </h1>
+      </div>
+    </header>
     <main class="main">
-      <header class="header">
-        <div class="header__flex-container">
-          <img class="header__logo" src="../assets/img/logo.png" alt="logo pucharu województwa śląskiego w marszach na orientację" />
-          <h1 class="header__page-name">
-            Puchar Województwa<span class="header__nbsp"></span>Śląskiego
-            w Marszach<span class="header__nbsp"></span>na Orientację
-          </h1>
-        </div>
-      </header>
 
-      <section class="news" id="news">
+<!-- NEWS -->
+
+      <section class="news" id="news" aria-labelledby="news__title">
         <div class="news__shadow"></div>
-        <h2 class="news__title">Najbliższe rundy</h2>
+        <h2 class="news__title" id="news__title">Najbliższe rundy</h2>
         <div class="news__events">
           <div class="event">
             <table class="event__table">
@@ -141,21 +156,35 @@
         </div>
       </section>
 
-      <section class="results" id="results">
-        <h2 class="results__title">Aktualne klasyfikacje</h2>
+<!-- RESULTS -->
+
+      <section class="results" id="results" aria-labelledby="results__title">
+        <h2 class="results__title" id="results__title">
+          Aktualne klasyfikacje
+        </h2>
         <p class="results__subtitle">Wyniki po 3 rundach</p>
         <p class="results__subtitle results__subtitle--small">
           Aktualizacja: 15.07.2020 r.
         </p>
 
         <div class="results__flex-container">
-          <a href target="_blank" rel="noopener" class="result">
+          <a
+            href="../../public/klasyfikacja/indywidualna.pdf"
+            target="_blank"
+            rel="noopener"
+            class="result"
+          >
             <span class="result__description result__description--individual">
               Indywidu­alna
             </span>
           </a>
 
-          <a href target="_blank" rel="noopener" class="result">
+          <a
+            href="../../public/klasyfikacja/druzynowa.pdf"
+            target="_blank"
+            rel="noopener"
+            class="result"
+          >
             <span class="result__description result__description--team">
               Druży­nowa
             </span>
@@ -163,8 +192,14 @@
         </div>
       </section>
 
-      <section class="event-calendar" id="event-calendar">
-        <h2 class="event-calendar__title">
+<!-- CALENDAR -->
+
+      <section
+        class="event-calendar"
+        id="event-calendar"
+        aria-labelledby="event-calendar__title"
+      >
+        <h2 class="event-calendar__title" id="event-calendar__title">
           Kalendarz rund w 2020 roku
         </h2>
         <p class="event-calendar__description">
@@ -196,8 +231,13 @@
             </thead>
             <tbody>
               <!-- RUNDA 1 -->
-              <tr class="calendar__event calendar__event--js calendar__event--past">
-                <td class="calendar__data" data-label="Runda">1<div class="calendar__button-container"></div></td>
+              <tr
+                class="calendar__event calendar__event--js calendar__event--past"
+              >
+                <td class="calendar__data" data-label="Runda">
+                  1
+                  <div class="calendar__button-container"></div>
+                </td>
                 <td class="calendar__data" data-label="Nazwa imprezy">
                   LII Zimowe Jazdy i Marsze na Orientację
                 </td>
@@ -215,7 +255,10 @@
               <tr
                 class="calendar__event calendar__event--js calendar__event--canceled calendar__event--past"
               >
-                <td class="calendar__data" data-label="Runda">2<div class="calendar__button-container"></div></td>
+                <td class="calendar__data" data-label="Runda">
+                  2
+                  <div class="calendar__button-container"></div>
+                </td>
                 <td class="calendar__data" data-label="Nazwa imprezy">
                   XLV Jurajskie Marsze na Orientację “Wiosenny Kompas”
                 </td>
@@ -232,8 +275,13 @@
               </tr>
 
               <!-- RUNDA 3 -->
-              <tr class="calendar__event calendar__event--js calendar__event--past">
-                <td class="calendar__data" data-label="Runda">3<div class="calendar__button-container"></div></td>
+              <tr
+                class="calendar__event calendar__event--js calendar__event--past"
+              >
+                <td class="calendar__data" data-label="Runda">
+                  3
+                  <div class="calendar__button-container"></div>
+                </td>
                 <td class="calendar__data" data-label="Nazwa imprezy">
                   Marsze na Orientację „Lato z kompasem”
                 </td>
@@ -251,7 +299,10 @@
               <tr
                 class="calendar__event calendar__event--js calendar__event--canceled calendar__event--past"
               >
-                <td class="calendar__data" data-label="Runda">4<div class="calendar__button-container"></div></td>
+                <td class="calendar__data" data-label="Runda">
+                  4
+                  <div class="calendar__button-container"></div>
+                </td>
                 <td class="calendar__data" data-label="Nazwa imprezy">
                   Tyniecki Piknik z Mapą
                 </td>
@@ -267,8 +318,13 @@
               </tr>
 
               <!-- RUNDA 5 -->
-              <tr class="calendar__event calendar__event--js calendar__event--past">
-                <td class="calendar__data" data-label="Runda">5<div class="calendar__button-container"></div></td>
+              <tr
+                class="calendar__event calendar__event--js calendar__event--past"
+              >
+                <td class="calendar__data" data-label="Runda">
+                  5
+                  <div class="calendar__button-container"></div>
+                </td>
                 <td class="calendar__data" data-label="Nazwa imprezy">
                   XIII Sobótkowe Nocne Marsze na Orientację
                 </td>
@@ -285,8 +341,13 @@
               </tr>
 
               <!-- RUNDA 6 -->
-              <tr class="calendar__event calendar__event--js calendar__event--current">
-                <td class="calendar__data" data-label="Runda">6<div class="calendar__button-container"></div></td>
+              <tr
+                class="calendar__event calendar__event--js calendar__event--current"
+              >
+                <td class="calendar__data" data-label="Runda">
+                  6
+                  <div class="calendar__button-container"></div>
+                </td>
                 <td class="calendar__data" data-label="Nazwa imprezy">
                   VIII Marsze na Orientację “Tropy Żubra”
                 </td>
@@ -303,7 +364,10 @@
 
               <!-- RUNDA 9 -->
               <tr class="calendar__event calendar__event--js">
-                <td class="calendar__data" data-label="Runda">9<div class="calendar__button-container"></div></td>
+                <td class="calendar__data" data-label="Runda">
+                  9
+                  <div class="calendar__button-container"></div>
+                </td>
                 <td class="calendar__data" data-label="Nazwa imprezy">
                   XX Międzyszkolne MnO "InOmania"
                 </td>
@@ -319,12 +383,17 @@
 
               <!-- RUNDA 10 -->
               <tr class="calendar__event calendar__event--js">
-                <td class="calendar__data" data-label="Runda">10<div class="calendar__button-container"></div></td>
+                <td class="calendar__data" data-label="Runda">
+                  10
+                  <div class="calendar__button-container"></div>
+                </td>
                 <td class="calendar__data" data-label="Nazwa imprezy">
                   Diablino
                 </td>
                 <td class="calendar__data" data-label="Termin">26.09</td>
-                <td class="calendar__data" data-label="Miejsce">Piekary Śląskie</td>
+                <td class="calendar__data" data-label="Miejsce">
+                  Piekary Śląskie
+                </td>
                 <td class="calendar__data" data-label="Organizator">
                   KTK "be-loć"
                 </td>
@@ -335,7 +404,10 @@
 
               <!-- RUNDA 7 -->
               <tr class="calendar__event calendar__event--js">
-                <td class="calendar__data" data-label="Runda">7<div class="calendar__button-container"></div></td>
+                <td class="calendar__data" data-label="Runda">
+                  7
+                  <div class="calendar__button-container"></div>
+                </td>
                 <td class="calendar__data" data-label="Nazwa imprezy">
                   XLI Marsze na Orientację „Pierwszy Śnieg”
                 </td>
@@ -351,7 +423,10 @@
 
               <!-- RUNDA 8 -->
               <tr class="calendar__event calendar__event--js">
-                <td class="calendar__data" data-label="Runda">8<div class="calendar__button-container"></div></td>
+                <td class="calendar__data" data-label="Runda">
+                  8
+                  <div class="calendar__button-container"></div>
+                </td>
                 <td class="calendar__data" data-label="Nazwa imprezy">
                   LI Barbórkowe Marsze na Orientację<br />LI Nocne Marsze na
                   Orientację
@@ -372,8 +447,10 @@
         </div>
       </section>
 
-      <section class="about" id="about">
-        <h2 class="about__title">O pucharze</h2>
+<!-- ABOUT -->
+
+      <section class="about" id="about" aria-labelledby="about__title">
+        <h2 class="about__title" id="about__title">O pucharze</h2>
         <p class="about__text">
           Puchar Województwa Śląskiego powstał z inicjatywy Organizatorów
           Turystycznych Imprez na Orientację działających na szeroko pojętym
@@ -387,9 +464,6 @@
           najlepszych. Szczegółowe informacje znajdują się w regulaminach
           poniżej.
         </p>
-        <!-- <p class="about__text">
-          Aktualnie funkcję Sędziego Głównego Pucharu pełni Marta Kapołka.
-        </p> -->
         <section class="rules">
           <h3 class="rules__title">Regulaminy</h3>
           <div class="rules__flex-container">
@@ -556,23 +630,25 @@
         </section>
       </section>
 
-      <section class="contact" id="contact">
+<!-- CONTACT -->
+
+      <section class="contact" id="contact" aria-labelledby="contact__title">
         <div class="contact__shadow"></div>
-        <h2 class="contact__title">Kontakt</h2>
+        <h2 class="contact__title" id="contact__title">Kontakt</h2>
         <div class="contact__links">
           <a
             href="mailto:sedzia.pws@gmail.com"
-            class="contact-link contact-link--mail"
+            class="contact-link "
           >
-            <span class="contact-link__text">sedzia.pws@gmail.com</span>
+            <span class="contact-link__text contact-link__text--mail">sedzia.pws@gmail.com</span>
           </a>
           <a
             href="https://www.facebook.com/PSlMnO"
             target="_blank"
             rel="noopener"
-            class="contact-link contact-link--facebook"
+            class="contact-link"
           >
-            <span class="contact-link__text">facebook.com/PSlMnO</span>
+            <span class="contact-link__text contact-link__text--facebook">facebook.com/PSlMnO</span>
           </a>
         </div>
       </section>

@@ -50,8 +50,10 @@
   position: relative;
   transition: all 0.15s ease-in-out;
   width: 100%;
-  &:hover {
+  &:hover,
+  &:focus {
     filter: $link-shadow-hover;
+    outline-offset: 1rem;
     transform: scale(1.05);
   }
   &__description {
@@ -65,7 +67,6 @@
     position: absolute;
     text-align: center;
     text-transform: uppercase;
-    top: 0.5rem;
     width: 100%;
     &::before {
       background-color: $primary;
@@ -116,8 +117,9 @@
   clip-path: polygon(22px 0%, 100% 0%, calc(100% - 22px) 100%, 0% 100%);
   display: inline-block;
   height: 9rem;
-  margin: 1rem .5rem;
+  margin: 1rem 0.5rem;
   min-width: 13rem;
+  outline: none;
   padding: 0.5rem 2rem;
   &__shadow-container {
     display: inline-block;
@@ -127,9 +129,18 @@
       filter: $link-shadow-hover;
       transform: scale(1.03);
     }
+    &:focus-within {
+      filter: $link-shadow-hover;
+      outline: auto;
+      transform: scale(1.03);
+    }
     &--nolink {
       filter: none;
       &:hover {
+        filter: none;
+        transform: none;
+      }
+      &:focus {
         filter: none;
         transform: none;
       }

@@ -22,6 +22,9 @@
     &:hover {
       color: $primary;
     }
+    &:focus {
+      color: $primary;
+    }
   }
   &--open {
     opacity: 1;
@@ -33,7 +36,7 @@
   background-color: rgba(0, 0, 0, 0);
   border: none;
   height: 3.6rem;
-  outline: none;
+  outline-offset: 1rem;
   position: fixed;
   right: 2rem;
   top: 2rem;
@@ -44,15 +47,15 @@
     width: 3.2rem;
   }
   &--scroll {
-      background-color: rgba(0, 0, 0, .15);
-      border-bottom-left-radius: 1rem;
-      color: $primary;
-      height: 5.6rem;
+    background-color: rgba(0, 0, 0, 0.15);
+    border-bottom-left-radius: 1rem;
+    color: $primary;
+    height: 5.6rem;
     padding: 1rem;
     right: 0;
     top: 0;
     width: 6rem;
-}
+  }
   &__stick {
     background-color: $black;
     height: 0.4rem;
@@ -68,9 +71,9 @@
         width: 4.6rem;
       }
       &.stick--scroll {
-          background-color: $white;
-          right: 1rem;
-          top: 1rem;
+        background-color: $white;
+        right: 1rem;
+        top: 1rem;
       }
     }
     &--middle {
@@ -82,7 +85,7 @@
         background-color: $white;
         right: 1rem;
         top: 2.6rem;
-    }
+      }
     }
     &--bottom {
       bottom: 0;
@@ -95,7 +98,7 @@
         background-color: $white;
         right: 1rem;
         bottom: 1rem;
-    }
+      }
     }
   }
 }
