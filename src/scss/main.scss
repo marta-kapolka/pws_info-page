@@ -42,6 +42,14 @@ a {
   text-decoration: none;
 }
 
+// ACCESIBILITY
+
+.visually-hidden {
+  display: none;
+}
+
+// MEDIA
+
 @media (min-width: 1024px) {
   html {
     scroll-behavior: smooth;
