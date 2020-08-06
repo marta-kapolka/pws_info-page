@@ -46,11 +46,14 @@
   &__event {
     background-color: $light-gray;
     display: block;
-    margin-bottom: 0.2rem;
+    margin-bottom: 0.4rem;
     min-width: 17.6rem;
     padding: 0.5rem;
     &--current {
       background-color: $primary-lighter;
+      & .calendar__button-container {
+        background-color: rgb(250, 208, 22, 0.2);
+      }
     }
     &--past {
       background-color: $light-gray;
@@ -89,8 +92,12 @@
       & > .calendar__data:nth-child(n + 2):nth-child(-n + 6) {
         display: none;
       }
-      & .calendar__button {
-        clip-path: polygon(0 0, 100% 0, 50% 100%);
+      & .calendar__button-container {
+        height: 3.7rem;
+      }
+      & .calendar__button::after {
+        top: 1rem;
+        transform: rotate3d(1, 0, 0, 180deg);
       }
     }
   }
@@ -123,19 +130,29 @@
   }
   &__button-container {
     display: inline-block;
-    height: 1.6rem;
+    height: 2.6rem;
+    max-width: 42rem;
     position: absolute;
-    right: 0;
-    width: 4rem;
+    right: -0.5rem;
+    top: -0.5rem;
+    width: calc(100% + 10rem);
   }
   &__button {
-    background-color: rgba(0, 0, 0, 0.25);
+    background-color: rgba(0, 0, 0, 0.05);
     border: none;
-    clip-path: polygon(50% 0, 100% 100%, 0 100%);
     height: 100%;
     position: absolute;
     top: 0;
     width: 100%;
+    &::after {
+      content: url(../assets/icons/arrow.svg);
+      height: 1.5rem;
+      position: absolute;
+      right: 0.5rem;
+      top: 0.5rem;
+      transition: transform 0.5s ease-in-out;
+      width: 1.5rem;
+    }
   }
 }
 
