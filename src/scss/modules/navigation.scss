@@ -9,7 +9,7 @@
   position: fixed;
   text-align: center;
   transform: translateX(100vw);
-  transition: all 0.5s ease-in-out;
+  transition: transform opacity 0.5s ease-in-out;
   width: 100%;
   z-index: 95;
   &__link {
@@ -17,14 +17,13 @@
     font-family: $accent;
     font-size: 1.8rem;
     padding: 2.5rem 1.5rem;
+    position: relative;
     text-transform: uppercase;
-    transition: color 0.15s ease-in-out;
-    &:hover {
-      color: $primary;
+    &::before {
+      content: "";
+      transform: scale(0);
     }
-    &:focus {
-      color: $primary;
-    }
+
   }
   &--open {
     opacity: 1;
@@ -36,7 +35,7 @@
   background-color: rgba(0, 0, 0, 0);
   border: none;
   height: 3.6rem;
-  outline-offset: .5rem;
+  outline-offset: 0.5rem;
   position: fixed;
   right: 2rem;
   top: 2rem;
@@ -119,9 +118,31 @@
       display: inline-block;
       font-size: 1.6rem;
       padding: 1.5rem;
+      &::before {
+        transition: transform 0.2s;
+      }
     }
   }
   .hamburger {
     display: none;
+  }
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .navigation {
+    &__link {
+      &:hover::before,
+      &:focus::before {
+        background-color: $primary;
+        bottom: 0.5rem;
+        content: "";
+        height: 0.4rem;
+        margin-left: -3.5rem;
+        position: absolute;
+        left: 50%;
+        transform: scale(1);
+        width: 7rem;
+      }
+    }
   }
 }

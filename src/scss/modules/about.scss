@@ -50,12 +50,6 @@
   position: relative;
   transition: all 0.15s ease-in-out;
   width: 100%;
-  &:hover,
-  &:focus {
-    filter: $link-shadow-hover;
-    outline-offset: 1rem;
-    transform: scale(1.05);
-  }
   &__description {
     align-items: center;
     background-color: $white;
@@ -125,25 +119,8 @@
     display: inline-block;
     filter: $link-shadow-mobile;
     transition: all 0.15s ease-in-out;
-    &:hover {
-      filter: $link-shadow-hover;
-      transform: scale(1.03);
-    }
-    &:focus-within {
-      filter: $link-shadow-hover;
-      outline: auto;
-      transform: scale(1.03);
-    }
     &--nolink {
-      filter: none;
-      &:hover {
-        filter: none;
-        transform: none;
-      }
-      &:focus {
-        filter: none;
-        transform: none;
-      }
+      filter: none;     
     }
   }
   &__logo {
@@ -197,5 +174,39 @@
     &__flex-container {
       max-width: none;
     }
+  }
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .rule {
+    &:hover,
+    &:focus {
+      filter: $link-shadow-hover;
+      outline-offset: 1rem;
+      transform: scale(1.05);
+    }
+  }
+  .club {
+    &__shadow-container {
+      &:hover {
+        filter: $link-shadow-hover;
+        transform: scale(1.03);
+      }
+      &:focus-within {
+        filter: $link-shadow-hover;
+        outline: auto;
+        transform: scale(1.03);
+      }
+      &--nolink {
+        &:hover {
+          filter: none;
+          transform: none;
+        }
+        &:focus {
+          filter: none;
+          transform: none;
+        }
+      }
+    }    
   }
 }

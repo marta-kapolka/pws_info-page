@@ -75,19 +75,10 @@
     &--facebook::before {
       content: url("../assets/icons/fb.svg");
     }
-    &:hover {
-      background-clip: text;
-      background-color: rgba(0, 0, 0, 0.6);
-      transform: scale(1.05);
-    }
+    
   }
 
-  &:focus-within {
-    background-color: rgba(0, 0, 0, 0.6);
-    outline: auto;
-    outline-offset: 0.5rem;
-    transform: scale(1.05);
-  }
+
 }
 
 @media (max-width: 420px) {
@@ -109,5 +100,24 @@
 @media (min-width: 1024px) {
   .contact {
     padding: 7rem 1.5rem;
+  }
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .contact-link {
+    &__text {
+      &:hover {
+        background-clip: text;
+        background-color: rgba(0, 0, 0, 0.6);
+        transform: scale(1.05);
+      }
+    }
+  
+    &:focus-within {
+      background-color: rgba(0, 0, 0, 0.6);
+      outline: auto;
+      outline-offset: 0.5rem;
+      transform: scale(1.05);
+    }
   }
 }
