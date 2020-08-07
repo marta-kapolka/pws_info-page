@@ -49,6 +49,14 @@
     margin-bottom: 0.4rem;
     min-width: 17.6rem;
     padding: 0.5rem;
+    &.calendar__event--fold .calendar__data:first-child::after {
+      content: (attr(data-date));
+      font-family: $text;
+      padding-left: 3rem;
+      font-style: italic;
+      font-weight: 300;
+      text-transform: none;
+    }
     &--current {
       background-color: $primary-lighter;
       & .calendar__button-container {
