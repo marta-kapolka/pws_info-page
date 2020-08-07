@@ -183,6 +183,9 @@
       font-weight: 700;
       &--current {
         background-color: $primary-light;
+        & .calendar__button-container {
+          background: none;
+        }
       }
       &--past {
         color: $dark-gray;
