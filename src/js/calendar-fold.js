@@ -7,7 +7,7 @@ function calendarFold() {
   let windowWidth = window.innerWidth;
   if (windowWidth < 768) {
     for (const container of containers) {
-      container.innerHTML = '<button class="calendar__button"></button>';
+      container.innerHTML = '<button class="calendar__button" aria-label="Otwórz menu"></button>';
     }
     for (const event of events) {
       if (event.classList.contains("calendar__event--past")) {

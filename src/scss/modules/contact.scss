@@ -85,7 +85,7 @@
   &:focus-within {
     background-color: rgba(0, 0, 0, 0.6);
     outline: auto;
-    outline-offset: .5rem;
+    outline-offset: 0.5rem;
     transform: scale(1.05);
   }
 }
@@ -93,11 +93,15 @@
 @media (max-width: 420px) {
   .contact-link {
     &__icon {
-      width: 3rem;
+      width: 2.6rem;
     }
     &__text {
+      clip-path: none;
       font-size: 1.8rem;
-      margin-left: 1rem;
+      padding: .5rem;
+      &::before {
+        margin-right: 1rem;
+      }
     }
   }
 }

@@ -24,13 +24,13 @@
     />
   </head>
   <body id="body">
-    <button class="hamburger hamburger--js">
+    <button class="hamburger hamburger--js" aria-label="Otwórz menu">
       <span class="hamburger__stick hamburger__stick--top"></span>
       <span class="hamburger__stick hamburger__stick--middle"></span>
       <span class="hamburger__stick hamburger__stick--bottom"></span>
-      <span class="visually-hidden">Menu</span>
     </button>
     <nav class="navigation navigation--js">
+      
       <a href="#news" class="navigation__link navigation__link--js"
         >Najbliższe rundy</a
       >
@@ -52,7 +52,7 @@
         <img
           class="header__logo"
           src="../assets/img/logo.png"
-          alt="logo pucharu województwa śląskiego w marszach na orientację"
+          alt="logo pucharu"
         />
         <h1 class="header__page-name">
           Puchar Województwa<span class="header__nbsp"></span>Śląskiego
@@ -171,6 +171,7 @@
           <a
             href="../../public/klasyfikacja/indywidualna.pdf"
             target="_blank"
+            title="PDF - klasyfikacja indywidualna"
             rel="noopener"
             class="result"
           >
@@ -182,6 +183,7 @@
           <a
             href="../../public/klasyfikacja/druzynowa.pdf"
             target="_blank"
+            title="PDF - klasyfikacja drużynowa"
             rel="noopener"
             class="result"
           >
@@ -663,7 +665,7 @@
       <p>ⓒ <span class="year--js"></span></p>
     </footer>
 
-    <a href="#body" class="back-to-top arrow--js">
+    <a href="#body" class="back-to-top arrow--js" aria-label="Powrót na górę strony">
       <svg
         class="back-to-top__arrow"
         xmlns="http://www.w3.org/2000/svg"
@@ -675,7 +677,6 @@
         <polyline points="1.1 58.7 36.1 23.7 71.1 58.7 " />
         <polyline points="1.2 38.4 36.2 3.4 71.2 38.4 " />
       </svg>
-      <span class="visually-hidden">Powrót na górę strony</span>
     </a>
   </body>
 </html>
