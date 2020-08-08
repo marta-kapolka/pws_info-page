@@ -94,8 +94,8 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin: 0 auto;
-    max-width: 120rem;
+    margin: 1rem auto 0;
+    max-width: 95rem;
   }
   &__title {
     font-family: $accent;
