@@ -4,23 +4,83 @@
   font-family: $text;
   font-size: 1.3rem;
   font-weight: 300;
-  line-height: 2;
   padding: $outter-mobile;
+  padding-bottom: 1rem;
   text-align: center;
-  // &__link {
-  //   color: $white;
-  //   font-weight: 500;
-  //   transition: all 0.15s ease-in-out;
-  //   &:hover {
-  //     color: $primary;
-  //   }
-  // }
   &__before {
     &::before {
       content: url("../assets/icons/ino.svg");
       display: inline-block;
-      margin: 0 .5rem;
+      margin: 0 0.5rem;
       width: 1rem;
+    }
+  }
+}
+
+.download {
+  margin-bottom: 1rem;
+  &__title {
+    font-family: $accent;
+    font-size: 1.6rem;
+    font-weight: 300;
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+  }
+  &__flex-container {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 3rem;
+  }
+  &::after {
+    border-bottom: 1px solid $white;
+    content: "";
+    left: calc(50% - 7.5rem);
+    position: absolute;
+    width: 15rem;
+  }
+}
+
+.logo {
+  margin: 0.5rem 1rem;
+  &__text {
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+  }
+  &__link {
+    border: 1.5px solid $white;
+    color: $primary;
+    display: inline-block;
+    font-family: $accent;
+    font-size: 1.6rem;
+    line-height: 1;
+    margin: 0 .5rem;
+    outline-offset: -.6rem;
+    padding: 1rem .5rem;
+    transition: all 0.2s ease-in-out;
+  }
+}
+
+.copyright {
+  line-height: 2;
+}
+
+@media (min-width: 768px) {
+  .logo {
+    margin: 0.5rem 3rem;
+  }
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .logo {
+    &__link {
+      &:hover,
+      &:focus {
+        background-color: $white;
+        box-shadow: 0 0 18px rgba(0, 0, 0, .5);
+        color: $black;
+        font-weight: bold;
+        transform: scale(1.1);
+      }
     }
   }
 }
