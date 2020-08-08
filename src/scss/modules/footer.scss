@@ -29,7 +29,7 @@
   &__flex-container {
     display: flex;
     justify-content: center;
-    padding-bottom: 2rem;
+    padding-bottom: 3rem;
   }
   &::after {
     border-bottom: 1px solid $white;
@@ -44,8 +44,10 @@
   margin: 0.5rem 1rem;
   &__text {
     font-size: 1.6rem;
+    margin-bottom: 1rem;
   }
   &__link {
+    border: 1.5px solid $white;
     color: $primary;
     display: inline-block;
     font-family: $accent;
@@ -54,7 +56,6 @@
     margin: 0 .5rem;
     outline-offset: -.6rem;
     padding: 1rem .5rem;
-    text-shadow: 0 0 8px rgba(0, 0, 0, 1);
     transition: all 0.2s ease-in-out;
   }
 }
@@ -74,7 +75,11 @@
     &__link {
       &:hover,
       &:focus {
-        transform: scale(1.2);
+        background-color: $white;
+        box-shadow: 0 0 18px rgba(0, 0, 0, .5);
+        color: $black;
+        font-weight: bold;
+        transform: scale(1.1);
       }
     }
   }
