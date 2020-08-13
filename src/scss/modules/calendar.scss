@@ -93,6 +93,7 @@
       }
     }
     &--canceled {
+      font-weight: 400;
       &.calendar__event--fold .calendar__data:first-child::after {
         content: "odwołana";
         font-family: $text;
@@ -223,6 +224,9 @@
         & .calendar__data:first-child::after {
           content: none;
         }
+      }
+      &--canceled {
+        font-weight: 400;
       }
     }
     &__data {
