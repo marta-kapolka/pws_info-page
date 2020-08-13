@@ -19,7 +19,7 @@
 
 .download {
   margin-bottom: 1rem;
-  &__title {
+    &__title {
     font-family: $accent;
     font-size: 1.6rem;
     font-weight: 300;
@@ -54,7 +54,6 @@
     font-size: 1.6rem;
     line-height: 1;
     margin: 0 .5rem;
-    outline-offset: -.6rem;
     padding: 1rem .5rem;
     transition: all 0.2s ease-in-out;
   }
