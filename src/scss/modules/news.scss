@@ -13,7 +13,7 @@
       rgba(0, 0, 0, 0.6) 20%,
       rgba(0, 0, 0, 0) 100%
     );
-    height: 20rem;
+    height: 40rem;
     left: 0;
     max-height: 100%;
     position: absolute;
@@ -25,7 +25,7 @@
     color: $white;
     font-family: $accent;
     font-size: 2.4rem;
-    margin: 1rem 0;
+    margin: 1rem 0 2rem;
     position: relative;
     text-align: center;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
@@ -36,6 +36,51 @@
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+  }
+  &__subtitle {
+    color: $white;
+    font-family: $accent;
+    font-size: 2rem;
+    margin: 2rem 0 1rem;
+    position: relative;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    text-transform: uppercase;
+    z-index: 60;
+  }
+}
+
+.ads-container {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.ad {
+  background-color: rgba(0, 0, 0, 0.75);
+  color: $white;
+  font-family: $text;
+  font-size: 1.4rem;
+  font-weight: 300;
+  line-height: 1.3;
+  margin-bottom: 2rem;
+  max-width: 60rem;
+  padding: 2rem;
+  position: relative;
+  width: 100%;
+  &__title {
+    color: $primary;
+    font-size: 1.4rem;
+    font-weight: 500;
+    margin-bottom: .2rem;
+  }
+  &__date {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+  }
+  &__text {
+    margin-top: .5rem;
   }
 }
 
@@ -113,7 +158,7 @@
 
 @media (min-width: 420px) {
   .event {
-    margin: 1.5rem 2rem;
+    margin: 1.5rem 0;
   }
 }
 
@@ -132,12 +177,20 @@
   .news {
     padding: 7rem $outter-desktop;
     &__events {
-      margin-top: 3rem;
+      margin-top: 1rem;
     }
     &__shadow {
-      height: 30rem;
+      height: 45rem;
+    }
+    &__subtitle {
+      margin-top: 3.5rem;
     }
     
+  }
+  .ad {
+    max-width: none;
+    padding: 3rem;
+    width: 88rem;
   }
   .event {
     margin-left: 4rem;
