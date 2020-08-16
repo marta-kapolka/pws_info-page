@@ -33,6 +33,7 @@
     z-index: 60;
   }
   &__events {
+    align-items: flex-start;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -79,14 +80,14 @@
     color: $primary;
     font-size: 1.4rem;
     font-weight: 500;
-    margin-bottom: .35rem;
+    margin-bottom: 0.35rem;
   }
   &__date {
     font-size: 1.2rem;
-    margin-bottom: .5rem;
+    margin-bottom: 0.5rem;
   }
   &__text {
-    margin-top: .35rem;
+    margin-top: 0.35rem;
   }
   &__link {
     color: $white;
@@ -162,7 +163,9 @@
     }
   }
   &__link {
-    color: $primary-darker;
+    display: block;
+    font-weight: 700;
+    line-height: 1.5;
   }
 }
 
@@ -195,7 +198,6 @@
     &__subtitle {
       margin-top: 3.5rem;
     }
-    
   }
   .ads {
     max-width: none;
@@ -204,10 +206,10 @@
   }
   .ad {
     &__title {
-      margin-bottom: .2rem;
+      margin-bottom: 0.2rem;
     }
     &___date {
-      margin-bottom: .7rem;
+      margin-bottom: 0.7rem;
     }
   }
   .event {
@@ -220,5 +222,11 @@
   .ad__link:hover,
   .ad__link:focus {
     color: $primary;
+  }
+  .event__link {
+    &:hover,
+    &:focus {
+      color: $primary-dark;
+    }
   }
 }

@@ -78,10 +78,7 @@
     &--facebook::before {
       content: url("../assets/icons/fb.svg");
     }
-    
   }
-
-
 }
 
 @media (max-width: 420px) {
@@ -92,7 +89,7 @@
     &__text {
       clip-path: none;
       font-size: 1.8rem;
-      padding: .5rem;
+      padding: 0.5rem;
       &::before {
         margin-right: 1rem;
       }
@@ -110,12 +107,11 @@
   .contact-link {
     &__text {
       &:hover {
-        background-clip: text;
         background-color: rgba(0, 0, 0, 0.6);
         transform: scale(1.05);
       }
     }
-  
+
     &:focus-within {
       background-color: rgba(0, 0, 0, 0.6);
       outline: auto;
