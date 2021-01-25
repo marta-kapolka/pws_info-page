@@ -49,6 +49,19 @@
     text-transform: uppercase;
     z-index: 60;
   }
+  &__info {
+    background-color: rgba(0, 0, 0, 0.75);
+    color: $white;
+    font-family: $accent;
+    font-size: 1.8rem;
+    line-height: 1.5;
+    margin: 2rem;
+    padding: 2rem;
+    position: relative;
+    text-align: center;
+    width: 300px;
+    z-index: 60;
+  }
 }
 
 .ads-container {
