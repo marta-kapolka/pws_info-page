@@ -1,5 +1,4 @@
 .archive {
-  display: none;
   background-color: $white;
   // clip-path: polygon(0 25%, 100% 0%, 100% 75%, 0% 100%);
   margin-top: 4rem;
@@ -10,13 +9,86 @@
     text-align: center;
     text-transform: uppercase;
   }
+  &__button {
+    background-color: $white;
+    border: 3px solid $primary;
+    cursor: pointer;
+    font-family: $accent;
+    font-size: 1.6rem;
+    font-weight: 500;
+    max-width: 42rem;
+    padding: 1rem;
+    position: relative;
+    text-transform: uppercase;
+    transition: all 0.15s ease-in-out;
+    width: 100%;
+    &::after {
+      content: url(../assets/icons/arrow.svg);
+      height: 1rem;
+      position: absolute;
+      right: 1rem;
+      bottom: 1.5rem;
+      transform: rotate(270deg);
+      transition: all 0.5s ease-in-out;
+      width: 1.5rem;
+    }
+    &--open.archive__button::after {
+      bottom: 1.2rem;
+      transform: rotate(-180deg);
+    }
+  }
   &__flex-container {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
+    margin: 2rem auto 0 auto;
+    max-width: 77rem;
+    &--hidden {
+      display: none;
+    }
   }
   &__link {
+    filter: $link-shadow-mobile;
+    width: 10rem;
+  }
+  &__year {
+    background-color: $primary;
+    clip-path: polygon(8px 0%, 100% 0%, calc(100% - 8px) 100%, 0% 100%);
+    display: block;
     font-family: $accent;
     font-size: 1.8rem;
-    padding: 1rem;
+    margin: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 0.8rem;
+    text-align: center;
+    transition: all 0.15s ease-in-out;
+  }
+}
+
+@media (min-width: 768px) {
+  .archive {
+    &__button {
+      padding-right: 3.5rem;
+      width: auto;
+    }
+  }
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .archive {
+    &__button {
+      &:hover,
+      &:focus {
+        background-color: $primary;
+        transform: scale(1.05);
+      }
+    }
+    &__link {
+      &:hover,
+      &:focus {
+        filter: $link-shadow-hover;
+        transform: scale(1.1);
+      }
+    }
   }
 }

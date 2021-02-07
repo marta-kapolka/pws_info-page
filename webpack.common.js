@@ -9,6 +9,7 @@ module.exports = {
     arrow: "./src/js/backtotop-arrow.js",
     year: "./src/js/footer-year.js",
     fold: "./src/js/calendar-fold.js",
+    archive: "./src/js/archive.js",
   },
   output: {
     filename: "[name].[hash:8].js",
@@ -70,9 +71,7 @@ module.exports = {
         {
           from: "public",
           globOptions: {
-            ignore: [
-              '**/*.DS_Store'
-            ],
+            ignore: ["**/*.DS_Store"],
           },
         },
       ],
@@ -82,7 +81,7 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: "./src/pages/index.html",
       inject: true,
-      chunks: ["index", "hamburger", "arrow", "year", "fold"],
+      chunks: ["index", "hamburger", "arrow", "year", "fold", "archive"],
       filename: "index.html",
     }),
   ],

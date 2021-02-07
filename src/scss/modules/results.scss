@@ -34,25 +34,6 @@
     display: flex;
     justify-content: center;
   }
-  &__button {
-    background-color: $white;
-    border: 3px solid $primary;
-    cursor: pointer;
-    font-family: $accent;
-    font-size: 1.6rem;
-    font-weight: 500;
-    padding: 1rem;
-    text-transform: uppercase;
-    transition: all 0.15s ease-in-out;
-    &::after {
-      content: " (trójkąt)";
-    }
-    &:hover,
-    &:focus {
-      background-color: $primary;
-      transform: scale(1.05);
-    }
-  }
 }
 
 .result {
@@ -131,5 +112,17 @@
 @media (min-width: 1024px) {
   .results {
     padding: 7rem 1.5rem;
+  }
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .results {
+    &__button {
+      &:hover,
+      &:focus {
+        background-color: $primary;
+        transform: scale(1.05);
+      }
+    }
   }
 }
