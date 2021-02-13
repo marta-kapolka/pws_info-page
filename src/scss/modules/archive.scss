@@ -34,7 +34,7 @@
       width: 1.5rem;
     }
     &--open.archive__button::after {
-      transform: translateY(calc(50% - 0.2rem)) rotate(-180deg); // 0.2rem - half of a difference between height and width of the triangle - 15x19px
+      transform: translateY(calc(50% - 0.2rem)) rotate(180deg); // 0.2rem - half of a difference between height and width of the triangle - 15x19px
     }
   }
   &__flex-container {
