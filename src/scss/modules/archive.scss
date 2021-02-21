@@ -1,0 +1,106 @@
+.archive {
+  background-color: $white;
+  // clip-path: polygon(0 25%, 100% 0%, 100% 75%, 0% 100%);
+  margin-top: 4rem;
+  &__title {
+    font-family: $accent;
+    font-size: 2rem;
+    margin: 1rem 0;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  &__button {
+    background-color: $white;
+    border: 3px solid $primary;
+    cursor: pointer;
+    font-family: $accent;
+    font-size: 1.6rem;
+    font-weight: 500;
+    max-width: 42rem;
+    padding: 1rem;
+    padding-right: 3rem;
+    position: relative;
+    text-transform: uppercase;
+    transition: all 0.15s ease-in-out;
+    width: 100%;
+    &::after {
+      content: url(../assets/icons/arrow.svg);
+      position: absolute;
+      right: 1rem;
+      bottom: 50%;
+      transform-origin: center;
+      transform: translateY(50%) rotate(-90deg);
+      transition: all 0.5s ease-in-out;
+      width: 1.5rem;
+    }
+    &--open.archive__button::after {
+      transform: translateY(calc(50% - 0.2rem)) rotate(180deg); // 0.2rem - half of a difference between height and width of the triangle - 15x19px
+    }
+  }
+  &__flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 2rem auto 0 auto;
+    max-width: 77rem;
+    &--hidden {
+      display: none;
+    }
+  }
+  &__link-container {
+    display: inline-block;
+    filter: $link-shadow-mobile;
+    width: 10rem;
+  }
+  &__link {
+    background-color: $primary;
+    clip-path: polygon(8px 0%, 100% 0%, calc(100% - 8px) 100%, 0% 100%);
+    display: block;
+    font-family: $accent;
+    font-size: 1.8rem;
+    margin: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 0.8rem;
+    text-align: center;
+    transition: all 0.15s ease-in-out;
+    &--disabled {
+      background-color: lightgray;
+      cursor: auto;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .archive {
+    &__button {
+      padding-right: 4rem;
+      width: auto;
+    }
+  }
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .archive {
+    &__button {
+      &:hover,
+      &:focus {
+        background-color: $primary;
+        transform: scale(1.05);
+      }
+    }
+    &__link {
+      &:hover,
+      &:focus {
+        filter: $link-shadow-hover;
+        transform: scale(1.1);
+      }
+      &--disabled {
+        &:hover,
+        &:focus {
+          filter: none;
+          transform: none;
+        }
+      }
+    }
+  }
+}
