@@ -4,7 +4,7 @@
 
 Simple static page with information about Recreational Orienteering Silesian Voivodeship Trophy. Page presents event calendar, results, current event details and general information about the trophy.
 
-OBRAZEK (gif)?
+<!-- OBRAZEK (gif)? -->
 
 ## Technologies used
 
