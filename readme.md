@@ -36,6 +36,6 @@ In the table each record contains all the details about an event - name, date, l
 
 ## Credits
 
-Project was build with [webpack starterkit](https://github.com/maciejkorsan/wtf-webpack-starter) by Maciej Korsan.
+Project was build with [WTF Webpack Starter Kit](https://github.com/maciejkorsan/wtf-webpack-starter) by Maciej Korsan.
 
 Graphic design and all the icons and photographs made by myself.
