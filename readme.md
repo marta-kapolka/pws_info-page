@@ -6,7 +6,7 @@ Simple static website with information about Recreational Orienteering Silesian 
 
 LIVE: [Puchar Województwa Śląskiego w MnO](http://www.pucharino.slask.pl/)
 
-![page previw](/src/assets/img/pws_screen.gif)
+![page preview](/src/assets/img/pws_screen.gif)
 
 ## Technologies used
 
@@ -31,6 +31,8 @@ I wanted to create **responsive** one page website with **clear structure** and 
 The biggest challenge I conquered was to **build a responsive table** presenting the calendar of events for current year. The main problem was how to present **dwo dimensional data** on narrow **mobile screen**.
 
 In the table each record contains all the details about an event - name, date, location, organiser and so on. In mobile version I decided to group all the details of each event and present them in kind of an **accordion form**, preserving the HTML table structure. Table headers in each accordion field are provided in CSS as `::before` element to avoid multiplying content and accessibility issues.
+
+![table preview](/src/assets/img/table_preview.png)
 
 ## Credits
 
