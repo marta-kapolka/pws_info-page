@@ -6,15 +6,13 @@ Simple static page with information about Recreational Orienteering Silesian Voi
 
 LIVE: [Puchar Województwa Śląskiego w MnO](http://www.pucharino.slask.pl/)
 
-<!-- OBRAZEK (gif)? -->
+![page previw](/src/assets/img/pws_screen.gif)
 
 ## Technologies used
 
 - HTML5
 - CSS3 (SASS)
 - JavaScript
-
-- build with [webpack starterkit](https://github.com/maciejkorsan/wtf-webpack-starter) by Maciej Korsan
 
 ## More about the project
 
