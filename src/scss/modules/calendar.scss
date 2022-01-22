@@ -29,6 +29,13 @@
     &:last-of-type {
       margin-bottom: 2rem;
     }
+    &--important {
+      color: $primary;
+      font-size: 2rem;
+      margin: 1rem auto;
+      text-indent: 0;
+      // font-weight: 400;
+    }
   }
   &__link-container {
     text-align: center;
