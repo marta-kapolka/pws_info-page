@@ -1,5 +1,4 @@
 import { ROUNDS } from "./rounds-data";
-import { getDateNumberString } from "./utils";
 
 const TODAY = new Date();
 const dateFormatOptions = {
