@@ -64,14 +64,14 @@
   }
 }
 
-.ads-container {
+.articles-container {
   align-items: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
-.ads {
+.articles {
   background-color: rgba(0, 0, 0, 0.75);
   margin-bottom: 2rem;
   max-width: 60rem;
@@ -80,7 +80,7 @@
   width: 100%;
 }
 
-.ad {
+.article {
   color: $white;
   font-family: $text;
   font-size: 1.4rem;
@@ -212,12 +212,12 @@
       margin-top: 3.5rem;
     }
   }
-  .ads {
+  .articles {
     max-width: none;
     padding: 2rem;
     width: 88rem;
   }
-  .ad {
+  .article {
     &__title {
       margin-bottom: 0.2rem;
     }
