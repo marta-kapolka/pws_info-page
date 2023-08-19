@@ -150,6 +150,5 @@ if (eventsContainerElement) {
     tableElement.append(captionElement, tableBodyElement);
     eventContainerElement.appendChild(tableElement);
     eventsContainerElement.appendChild(eventContainerElement);
-    console.log(eventsContainerElement);
   });
 }

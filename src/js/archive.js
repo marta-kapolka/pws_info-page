@@ -8,5 +8,3 @@ const toggleArchive = () => {
 };
 
 button.addEventListener("click", toggleArchive);
-
-console.log(button, archive);
