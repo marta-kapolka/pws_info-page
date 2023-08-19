@@ -136,7 +136,7 @@ const ROUND_6 = {
 const ROUND_7 = {
   number: 7,
   date: new Date("2023-10-21"),
-  name: "Marsze na Orientację 1000002023",
+  name: "MnO 1000002023",
   shortName: "MnO 1000002023",
   location: "Beskid Śląski",
   club: "PKT Plessino - Pszczyna",
