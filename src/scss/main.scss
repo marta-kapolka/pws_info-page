@@ -43,6 +43,16 @@ a {
   text-decoration: none;
 }
 
+.noscript {
+  background-color: $white;
+  color: $black;
+  font-family: $accent;
+  font-size: 1.6rem;
+  font-style: italic;
+  margin-top: 2rem;
+  padding: 2rem;
+}
+
 // MEDIA
 
 @media (min-width: 1024px) {
