@@ -2,6 +2,10 @@ import { ROUNDS } from "./rounds-data";
 import { getDateNumberString } from "./utils";
 
 const TODAY = new Date();
+const dateFormatOptions = {
+  month: "2-digit",
+  day: "2-digit",
+};
 let isCurrentRoundAlreadyMarked = false;
 
 function addCalendarDataClass(element) {
@@ -29,7 +33,10 @@ ROUNDS.forEach((round) => {
   const numberElement = document.createElement("td");
   addCalendarDataClass(numberElement);
   addDataLabel(numberElement, "Runda");
-  numberElement.setAttribute("data-date", getDateNumberString(round.date));
+  numberElement.setAttribute(
+    "data-date",
+    new Intl.DateTimeFormat("pl-PL", dateFormatOptions).format(round.date)
+  );
   const roundNumberText = document.createTextNode(round.number.toString());
   const buttonContainerElement = document.createElement("div");
   buttonContainerElement.classList.add("calendar__button-container");
@@ -56,7 +63,9 @@ ROUNDS.forEach((round) => {
   const dateElement = document.createElement("td");
   addCalendarDataClass(dateElement);
   addDataLabel(dateElement, "Termin");
-  const date = document.createTextNode(getDateNumberString(round.date, true));
+  const date = document.createTextNode(
+    new Intl.DateTimeFormat("pl-PL", dateFormatOptions).format(round.date)
+  );
   dateElement.appendChild(date);
 
   // LOCATION

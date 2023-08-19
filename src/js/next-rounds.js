@@ -1,7 +1,11 @@
 import { ROUNDS } from "./rounds-data";
-import { getDateWordsString } from "./utils";
 
 const TODAY = new Date();
+const dateFormatOptions = {
+  year: "numeric",
+  month: "long",
+  day: "numeric",
+};
 
 const firstNextRound = ROUNDS.find((round) => {
   return round.date >= TODAY;
@@ -71,7 +75,10 @@ if (eventsContainerElement) {
     const tableBodyElement = document.createElement("tbody");
 
     const nameRowElement = createRow("Co?", round.name, true);
-    const dateRowElement = createRow("Kiedy?", getDateWordsString(round.date));
+    const dateRowElement = createRow(
+      "Kiedy?",
+      new Intl.DateTimeFormat("pl-PL", dateFormatOptions).format(round.date)
+    );
     const locationRowElement = createRow("Gdzie?", round.location);
     const clubRowElement = createRow("Kto?", round.shortClub);
     const categoriesRowElement = createRow(
