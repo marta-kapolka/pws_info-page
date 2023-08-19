@@ -1,0 +1,211 @@
+export const Categories = {
+  TM: "M",
+  TJ: "J",
+  TS: "S",
+  TK: "K",
+  TW: "W",
+  TN: "N",
+};
+
+const ROUND_1 = {
+  number: 1,
+  date: new Date("2023-02-18"),
+  name: "XVIII Mroźne Marsze na Orientację",
+  shortName: "Mroźne MnO",
+  location: "Chechło",
+  club: "KTK „be loć” Piekary Śląskie",
+  shortClub: "be-loć",
+  categories: [
+    Categories.TM,
+    Categories.TJ,
+    Categories.TS,
+    Categories.TK,
+    Categories.TW,
+    Categories.TN,
+  ],
+  eventFacebookLink: undefined,
+  eventWebsiteLink: undefined,
+  eventBulletinLink: undefined,
+};
+
+const ROUND_2 = {
+  number: 2,
+  date: new Date("2023-02-26"),
+  name: "LV Zimowe Jazdy i Marsze na Orientację",
+  shortName: "Zimowe JiMnO",
+  location: "Wysoka",
+  club: "GKT „Cyrkino” PTTK - Gliwice",
+  shortClub: "Cyrkino",
+  categories: [
+    Categories.TM,
+    Categories.TJ,
+    Categories.TS,
+    Categories.TK,
+    Categories.TW,
+    Categories.TN,
+  ],
+  eventFacebookLink: undefined,
+  eventWebsiteLink: undefined,
+  eventBulletinLink: undefined,
+};
+
+const ROUND_3 = {
+  number: 3,
+  date: new Date("2023-03-25"),
+  name: "XLIII Marsze na Orientacje „Wiosna z kompasem”",
+  shortName: "Wiosna z kompasem",
+  location: "okolica Katowic",
+  club: "„Czartak” PTTK - Katowice",
+  shortClub: "Czartak",
+  categories: [
+    Categories.TM,
+    Categories.TJ,
+    Categories.TS,
+    Categories.TK,
+    Categories.TW,
+    Categories.TN,
+  ],
+  eventFacebookLink: undefined,
+  eventWebsiteLink: undefined,
+  eventBulletinLink: undefined,
+};
+
+const ROUND_4 = {
+  number: 4,
+  date: new Date("2023-04-01"),
+  name: "II Primaaprilisowe MnO",
+  shortName: "Primaaprilisowe MnO",
+  location: "Dąbrowa Górnicza",
+  club: "Stowarzyszenie Rozwoju Orienteeringu",
+  shortClub: "Stowarzyszenie Rozwoju Orienteeringu",
+  categories: [
+    Categories.TM,
+    Categories.TJ,
+    Categories.TS,
+    Categories.TK,
+    Categories.TW,
+    Categories.TN,
+  ],
+  eventFacebookLink: undefined,
+  eventWebsiteLink: undefined,
+  eventBulletinLink: undefined,
+};
+
+const ROUND_5 = {
+  number: 5,
+  date: new Date("2023-08-06"),
+  name: "MnO Pełnia Lata",
+  shortName: "MnO Pełnia Lata",
+  location: "Chrzanów",
+  club: "AKInO Kraków",
+  shortClub: "AKInO",
+  categories: [
+    Categories.TM,
+    Categories.TJ,
+    Categories.TS,
+    Categories.TK,
+    Categories.TW,
+    Categories.TN,
+  ],
+  eventFacebookLink: undefined,
+  eventWebsiteLink: undefined,
+  eventBulletinLink: undefined,
+};
+
+const ROUND_6 = {
+  number: 6,
+  date: new Date("2023-09-16"),
+  name: "Diablino 2023",
+  shortName: "Diablino",
+  location: "okolica Piekar Śląskich",
+  club: "KTK „be loć” Piekary Śląskie",
+  shortClub: "be-loć",
+  categories: [
+    Categories.TM,
+    Categories.TJ,
+    Categories.TS,
+    Categories.TK,
+    Categories.TW,
+    Categories.TN,
+  ],
+  eventFacebookLink: undefined,
+  eventWebsiteLink: undefined,
+  eventBulletinLink: undefined,
+};
+
+const ROUND_7 = {
+  number: 7,
+  date: new Date("2023-10-21"),
+  name: "Marsze na Orientację 1000002023",
+  shortName: "MnO 1000002023",
+  location: "Beskid Śląski",
+  club: "PKT Plessino - Pszczyna",
+  additionalClub: "Sino TPL „Krokus Miliardowice” – Ligota",
+  shortClub: "Plessino / Krokus",
+  categories: [
+    Categories.TM,
+    Categories.TJ,
+    Categories.TS,
+    Categories.TK,
+    Categories.TW,
+    Categories.TN,
+  ],
+  eventFacebookLink: undefined,
+  eventWebsiteLink: undefined,
+  eventBulletinLink: undefined,
+};
+
+const ROUND_8 = {
+  number: 8,
+  date: new Date("2023-11-18"),
+  name: "XLIV Marsze na Orientację „Pierwszy Śnieg”",
+  shortName: "Pierwszy Śnieg",
+  location: "okolica Katowic",
+  club: "„Czartak” PTTK - Katowice",
+  shortClub: "Czartak",
+  categories: [
+    Categories.TM,
+    Categories.TJ,
+    Categories.TS,
+    Categories.TK,
+    Categories.TW,
+    Categories.TN,
+  ],
+  eventFacebookLink: undefined,
+  eventWebsiteLink: undefined,
+  eventBulletinLink: undefined,
+};
+
+const ROUND_9 = {
+  number: 9,
+  date: new Date("2023-12-02"),
+  name: "LIV Barbórkowe Marsze na Orientację",
+  additionalName: "LIV Nocne Marsze na Orientację",
+  shortName: "Barbórkowe i Nocne",
+  location: "okolica Gliwic",
+  club: "GKT „Cyrkino” PTTK - Gliwice",
+  shortClub: "Cyrkino",
+  categories: [
+    Categories.TM,
+    Categories.TJ,
+    Categories.TS,
+    Categories.TK,
+    Categories.TW,
+    Categories.TN,
+  ],
+  eventFacebookLink: undefined,
+  eventWebsiteLink: undefined,
+  eventBulletinLink: undefined,
+};
+
+export const ROUNDS = [
+  ROUND_1,
+  ROUND_2,
+  ROUND_3,
+  ROUND_4,
+  ROUND_5,
+  ROUND_6,
+  ROUND_7,
+  ROUND_8,
+  ROUND_9,
+];
