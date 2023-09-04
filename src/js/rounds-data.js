@@ -130,7 +130,7 @@ const ROUND_6 = {
   ],
   eventFacebookLink: undefined,
   eventWebsiteLink: undefined,
-  eventBulletinLink: "/public/rundy/2023_diablino_regulamin.pdf",
+  eventBulletinLink: "/rundy/2023_diablino_regulamin.pdf",
 };
 
 const ROUND_7 = {
