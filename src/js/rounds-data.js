@@ -135,7 +135,7 @@ const ROUND_6 = {
 
 const ROUND_7 = {
   number: 7,
-  date: new Date("2023-10-21"),
+  date: new Date("2023-10-22"),
   name: "MnO 1000002023",
   shortName: "MnO 1000002023",
   location: "Beskid Śląski",
@@ -152,7 +152,7 @@ const ROUND_7 = {
   ],
   eventFacebookLink: undefined,
   eventWebsiteLink: undefined,
-  eventBulletinLink: undefined,
+  eventBulletinLink: "/rundy/2023_1000002023_regulamin.pdf",
 };
 
 const ROUND_8 = {
