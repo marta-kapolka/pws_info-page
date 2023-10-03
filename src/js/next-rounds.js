@@ -74,7 +74,7 @@ if (eventsContainerElement) {
 
     const tableBodyElement = document.createElement("tbody");
 
-    const nameRowElement = createRow("Co?", round.name, true);
+    const nameRowElement = createRow("Co?", round.shortName, true);
     const dateRowElement = createRow(
       "Kiedy?",
       new Intl.DateTimeFormat("pl-PL", dateFormatOptions).format(round.date)
