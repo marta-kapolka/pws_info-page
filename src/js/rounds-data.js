@@ -171,9 +171,9 @@ const ROUND_8 = {
     Categories.TW,
     Categories.TN,
   ],
-  eventFacebookLink: undefined,
+  eventFacebookLink: "https://www.facebook.com/events/192795727135146/",
   eventWebsiteLink: undefined,
-  eventBulletinLink: undefined,
+  eventBulletinLink: "/rundy/2023_snieg_regulamin.pdf",
 };
 
 const ROUND_9 = {
