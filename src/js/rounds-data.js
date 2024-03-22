@@ -65,9 +65,9 @@ const ROUND_3 = {
     Categories.TW,
     Categories.TN,
   ],
-  eventFacebookLink: undefined,
+  eventFacebookLink: "https://www.facebook.com/events/2565326536984253",
   eventWebsiteLink: undefined,
-  eventBulletinLink: undefined,
+  eventBulletinLink: "/rundy/2024_wiosna_regulamin.pdf",
 };
 
 const ROUND_4 = {
@@ -87,9 +87,9 @@ const ROUND_4 = {
     Categories.TW,
     Categories.TN,
   ],
-  eventFacebookLink: undefined,
+  eventFacebookLink: "https://www.facebook.com/events/1604403080306004/",
   eventWebsiteLink: undefined,
-  eventBulletinLink: undefined,
+  eventBulletinLink: "/rundy/2024_primaaprilisowe_regulamin.pdf",
 };
 
 const ROUND_5 = {
@@ -180,7 +180,7 @@ const ROUND_8 = {
 
 const ROUND_9 = {
   number: 9,
-  date: new Date("2024-12-02"),
+  date: new Date("2024-12-07"),
   name: "LV Barbórkowe Marsze na Orientację",
   additionalName: "LV Nocne Marsze na Orientację",
   shortName: "Barbórkowe i Nocne",
