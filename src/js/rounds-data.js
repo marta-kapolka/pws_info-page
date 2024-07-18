@@ -94,7 +94,7 @@ const ROUND_4 = {
 
 const ROUND_5 = {
   number: 5,
-  date: new Date("2024-08-04"),
+  date: new Date("2024-08-11"),
   name: "II MnO Pełnia Lata",
   shortName: "MnO Pełnia Lata",
   location: "Dąbrowa Górnicza",
@@ -109,9 +109,10 @@ const ROUND_5 = {
     Categories.TW,
     Categories.TN,
   ],
-  eventFacebookLink: undefined,
+  eventFacebookLink: "https://www.facebook.com/events/466515735985239/",
   eventWebsiteLink: undefined,
-  eventBulletinLink: undefined,
+  eventBulletinLink:
+    "https://www.canva.com/design/DAGKikukJgg/5eI9SYVdF5F3JeMZ4xL1Bg/edit",
 };
 
 const ROUND_6 = {
